@@ -1,4 +1,4 @@
-package project.functions;
+package project.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

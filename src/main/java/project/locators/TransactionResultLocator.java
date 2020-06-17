@@ -3,7 +3,7 @@ package project.locators;
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;
 
-public class TransactionResultLocator {
+public interface TransactionResultLocator {
 
     // Text View
     By TEXT_RESULT_TITLE = MobileBy.id("tvResultTitle");

@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import project.androidDriver.AndroidDriverInstance;
 import project.locators.LoginLocator;
-import sun.rmi.runtime.Log;
 
 public class LoginPage {
     public boolean isOnLoginPage(){

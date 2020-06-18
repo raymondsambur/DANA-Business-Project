@@ -1,14 +1,10 @@
-package project.steps;
+package project.stepsdefinition;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import project.androidDriver.AndroidDriverInstance;
-import project.locators.LoginLocator;
 import project.pages.LoginPage;
 
 public class LoginStepDefinition {

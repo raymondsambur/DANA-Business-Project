@@ -1,4 +1,4 @@
-package project.steps;
+package project.stepsdefinition;
 
 public class RegisterStepDefinition {
 }

@@ -20,6 +20,7 @@ public class MyAccountPage implements MyAccountLocator {
 
     // Buttons Functions
     public void tapChangeProfile() { androidDriver.findElement(BUTTON_CHANGE_PROFILE).click(); }
+    public void tapBalance() { androidDriver.findElement(TEXT_BALANCE).click(); }
     public void tapChangePassword() { androidDriver.findElement(BUTTON_CHANGE_PASSWORD).click(); }
     public void tapChangePINSecurity() { androidDriver.findElement(BUTTON_CHANGE_PIN_SECURITY).click(); }
     public void tapLogout() { androidDriver.findElement(BUTTON_LOGOUT).click(); }

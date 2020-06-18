@@ -6,7 +6,7 @@ import project.locators.ChangePINSecurityLocator;
 
 import static project.androidDriver.AndroidDriverInstance.androidDriver;
 
-public class ChangePIN implements ChangePINSecurityLocator {
+public class ChangePINPage implements ChangePINSecurityLocator {
 
     public boolean onChangePINPage() { return PageFunctions.waitABit(TEXT_CHANGE_PIN_SECURITY_TITLE).isDisplayed(); }
 

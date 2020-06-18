@@ -5,7 +5,7 @@ import project.locators.MyAccountLocator;
 
 import static project.androidDriver.AndroidDriverInstance.androidDriver;
 
-public class MyAccount implements MyAccountLocator {
+public class MyAccountPage implements MyAccountLocator {
 
     // Check if on My Account Page
     public boolean onMyAccountPage(){

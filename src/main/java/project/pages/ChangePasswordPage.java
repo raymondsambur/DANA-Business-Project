@@ -5,7 +5,7 @@ import project.locators.ChangePasswordLocator;
 
 import static project.androidDriver.AndroidDriverInstance.androidDriver;
 
-public class ChangePassword implements ChangePasswordLocator {
+public class ChangePasswordPage implements ChangePasswordLocator {
 
     public boolean onChangePasswordPage() { return androidDriver.findElement(TEXT_CHANGE_PASSWORD_TITLE).isDisplayed(); }
 

@@ -12,39 +12,39 @@ public class HomeStepDefinition {
     public void userValidateDANABalanceWithCurrentDANABalanceOnHomePage() {
     }
 
-    @When("User click Top Up Button on Home Page")
-    public void userClickTopUpButtonOnHomePage() {
+    @When("User tap Top Up Button on Home Page")
+    public void userTapTopUpButtonOnHomePage() {
     }
 
-    @When("User click Transaction Button on Home Page")
-    public void userClickTransactionButtonOnHomePage() {
+    @When("User tap Transaction Button on Home Page")
+    public void userTapTransactionButtonOnHomePage() {
     }
 
     @Then("User is on Transaction page")
     public void userIsOnTransactionPage() {
     }
 
-    @When("User click Account Button on Home Page")
-    public void userClickAccountButtonOnHomePage() {
+    @When("User tap Account Button on Home Page")
+    public void userTapAccountButtonOnHomePage() {
     }
 
-    @When("User click Transfer Button on Home Page")
-    public void userClickTransferButtonOnHomePage() {
+    @When("User tap Transfer Button on Home Page")
+    public void userTapTransferButtonOnHomePage() {
     }
 
     @Then("User see message {string}")
     public void userSeeMessage(String arg0) {
     }
 
-    @When("User click QR Scan Button on Home Page")
-    public void userClickQRScanButtonOnHomePage() {
+    @When("User tap QR Scan Button on Home Page")
+    public void userTapQRScanButtonOnHomePage() {
     }
 
     @Then("User is on QR Scan page")
     public void userIsOnQRScanPage() {
     }
 
-    @When("User click Notification Button on Home Page")
-    public void userClickNotificationButtonOnHomePage() {
+    @When("User tap Notification Button on Home Page")
+    public void userTapNotificationButtonOnHomePage() {
     }
 }

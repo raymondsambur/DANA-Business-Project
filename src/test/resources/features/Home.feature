@@ -47,7 +47,7 @@ Feature: Home
     When  User click QR Scan Button on Home Page
     Then  User is on QR Scan page
 
-  Scenario: Validate the functional of Notification Button on Home Page
-    Given User is on Home Page
-    When  User click Notification Button on Home Page
-    Then  User see message "This Feature is Coming Soon!"
+#  Scenario: Validate the functional of Notification Button on Home Page
+#    Given User is on Home Page
+#    When  User click Notification Button on Home Page
+#    Then  User see message "This Feature is Coming Soon!"

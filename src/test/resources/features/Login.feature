@@ -52,12 +52,12 @@ Feature: Login
   @Invalid
   Scenario: 7. user login with 13 digits phone number but correct password
     Given User is on Login Page
-    When User input phone number "81300000" on phone number field
+    When User input phone number "8130000000000" on phone number field
     And User input password "P@ssw0rd" on password field
     And User cannot click Sign In button on Login Page
     Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
 
-  @Invalid
+  @Invalid @Nyoba
   Scenario Outline: 8 - 12. user login with non-numerical phone number but correct password
     Given User is on Login Page
     When User input phone number "<phone number>" on phone number field
@@ -66,12 +66,20 @@ Feature: Login
     Then User see error message "<error message>"
 
     Examples:
-      | phone number | password |error message|
+      | phone number | password | error message                                                                      |
       | 813abcd00    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
-      | abcdefghi    | P@ssw0rd |Phone Number cannot be empty!                                                       |
-      | 81300000!    | P@ssw0rd |Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!  |
-      | !@#$%^&*(    | P@ssw0rd |Phone Number cannot be empty!                                                       |
-      | 😭           | P@ssw0rd |Phone Number cannot be empty!                                                       |
+      | abcdefghi    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
+      | 81300000!    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
+      | !@#$%^&*(    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
+      | 😭           | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
+
+  @Emot
+  Scenario: 7. user login with 13 digits phone number but correct password
+    Given User is on Login Page
+    When User input phone number "81394577665" on phone number field
+    And User input password "P@ssw0rd😭" on password field
+    And User cannot click Sign In button on Login Page
+    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
 
   @Invalid
   Scenario: 13. user login with prefix 62 phone number but correct password
@@ -113,7 +121,7 @@ Feature: Login
     And User cannot click Sign In button on Login Page
     Then User see error message "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
 
-  @Invalid
+  @Invalid @Scenario
   Scenario Outline: 18 - 33. user login with corret phone number but invalid password format
     Given User is on Login Page
     When User input phone number "<phone number>" on phone number field
@@ -157,23 +165,23 @@ Feature: Login
       | 81394577665  | P@ssw0rd😭 |
 
   #PHONE FIELD
-  @Valid
+  @PhoneField
   Scenario:  User input valid format phone number
     Given User is on Login Page
     When User input phone number "81394577665" on phone number field
     Then User see no error message
 
-  @Invalid
+  @PhoneField
   Scenario: User left empty phone number
     Given User is on Login Page
     When User didn't input phone number on phone number field
     Then User see error message "Phone Number cannot be empty!"
 
-  @Invalid
+  @PhoneField
   Scenario Outline: User input invalid format phone number
     Given User is on Login Page
     When User input phone number "<phone number>" on phone number field
-    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
+    Then User see error message "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
 
     Examples:
       | phone number  |
@@ -188,23 +196,22 @@ Feature: Login
       | 08130000000   |
 
   #PASSWORD FIELD
-  @Valid
+  @PasswordField
   Scenario: User input valid format password
     Given User is on Login Page
     When User input password "P@ssw0rd" on password field
     Then User see no error message
 
-  @Invalid
+  @PasswordField
   Scenario: User left empty password
     Given User is on Login Page
     When User didn't input password on password field
-    Then User see error message "Password cannot be empty!"
-
-  @Invalid
+    Then User see error message "Password cannot be empty!" on password field
+  @PasswordField
   Scenario Outline: User input invalid format password
     Given User is on Login Page
     When User input password "<password>" on password field
-    Then User see error message "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
+    Then User see error message "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!" on password field
 
     Examples:
       | password              |
@@ -228,33 +235,33 @@ Feature: Login
       | P@ssw0rd😭            |
 
   #HIDE/SHOW PASSWORD BUTTON
-  Scenario: User didn't input password and click hide/show password button
-    Given User is on Login Page
-    When User didn't input password on password field
-    And User click show password button
-    Then User see "" on password field
-
+  @Show
   Scenario: User input password and click hide/show password button
     Given User is on Login Page
     When User input password "P@ssw0rd" on password field
     And User click show password button
     Then User see "P@ssw0rd" on password field
 
+  @Show
   Scenario: User input password and didn't click hide/show password button
     Given User is on Login Page
     When User input password "P@ssw0rd" on password field
-    Then User see "••••••••" on password field
+    #Then User see "••••••••" on password field
+    Then User see password is masked
 
+  @Show
   Scenario: User input invalid format password and click hide/show password button
     Given User is on Login Page
     When User input password "P@ssw0r" on password field
     And User click show password button
     Then User see "P@ssw0r" on password field
 
+  @Show
   Scenario: User input invalid format password and click hide/show password button
     Given User is on Login Page
     When User input password "P@ssw0r" on password field
-    Then User see "•••••••" on password field
+    #Then User see "•••••••" on password field
+    Then User see password is masked
 
   #FORGOT PASSWORD BUTTON
   Scenario: User wants to Forgot his own Password

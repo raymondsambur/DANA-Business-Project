@@ -9,7 +9,7 @@ public interface HomeLocator {
     By TEXT_BALANCE = MobileBy.id("tvHomeBalance");
 
     // Image View
-    By IMAGE_DANA = MobileBy.id("ivHomeLogo");
+    By IMAGE_DANA = MobileBy.id("img_logo_dana");
 
     // Button
     By BUTTON_TOP_UP = MobileBy.id("btnHomeTopUp");

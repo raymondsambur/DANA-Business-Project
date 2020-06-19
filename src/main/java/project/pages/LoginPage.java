@@ -35,8 +35,19 @@ public class LoginPage {
         return wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocator.TEXT_ERROR_MESSAGE)).isDisplayed();
     }
 
+    public boolean checkWarningTextPassword(){
+        WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver,15);
+        return wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocator.TEXT_ERROR_MESSAGE)).isDisplayed();
+    }
+
     public String getWarningText(){
         WebElement warningText = AndroidDriverInstance.androidDriver.findElement(LoginLocator.TEXT_ERROR_MESSAGE);
+
+        return warningText.getText();
+    }
+
+    public String getWarningTextPassword(String expected){
+        WebElement warningText = AndroidDriverInstance.androidDriver.findElement(By.xpath("//android.widget.TextView[contains(@text, '"+expected+"')]"));
 
         return warningText.getText();
     }
@@ -57,6 +68,11 @@ public class LoginPage {
         return passText.getText();
     }
 
+    public boolean isPasswordMasked() {
+        WebElement password = AndroidDriverInstance.androidDriver.findElement(By.xpath("//android.widget.EditText[@password = 'true']"));
+
+        return password.isDisplayed();
+    }
     public void clickForgotPassButton(){
         WebElement forPassButton = AndroidDriverInstance.androidDriver.findElement(LoginLocator.BUTTON_FORGOT_PASSWORD);
         forPassButton.click();

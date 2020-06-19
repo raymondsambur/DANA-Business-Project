@@ -5,11 +5,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import project.pages.HomePage;
 import project.pages.LoginPage;
 
 public class LoginStepDefinition {
 
     private LoginPage loginPage = new LoginPage();
+    private HomePage homePage = new HomePage();
 
     @Given("User is on Login Page")
     public void userIsOnLoginPage() {
@@ -33,7 +35,7 @@ public class LoginStepDefinition {
 
     @Then("User directed to Home Page")
     public void userDirectedToHomePage() {
-        //////////////////////
+        homePage.isOnHomePage();
     }
 
     @Then("User see error message {string}")
@@ -96,5 +98,19 @@ public class LoginStepDefinition {
     @Then("User directed to Register Page")
     public void userDirectedToRegisterPage() {
         /////////////////
+    }
+
+    @Then("User see error message {string} on password field")
+    public void userSeeErrorMessageOnPhoneNumberField(String errorText) {
+        loginPage.checkWarningTextPassword();
+        String actual = loginPage.getWarningTextPassword(errorText);
+
+        Assert.assertEquals(errorText, actual);
+    }
+
+    @Then("User see password is masked")
+    public void userSeePasswordIsMasked() {
+        boolean status = loginPage.isPasswordMasked();
+        Assert.assertTrue(status);
     }
 }

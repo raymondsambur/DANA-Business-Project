@@ -8,7 +8,7 @@ import org.junit.Assert;
 import project.pages.ChangePasswordPage;
 import project.pages.MyAccountPage;
 
-public class ChangePasswordDefinition {
+public class ChangePasswordStepDefinition {
      MyAccountPage myAccountPage = new MyAccountPage();
      ChangePasswordPage changePasswordPage = new ChangePasswordPage();
 

@@ -40,21 +40,19 @@ public class LoginStepDefinition {
 
     @Then("User see error message {string}")
     public void userSeeErrorMessage(String errorText) {
-       loginPage.checkWarningText();
-       String message = loginPage.getWarningText();
-
+        loginPage.checkWarningText();
+        String message = loginPage.getWarningText();
         Assert.assertEquals(errorText, message);
     }
 
     @When("User didn't input phone number on phone number field")
     public void userDidnTInputPhoneNumberOnPhoneNumberField() {
-        
+
     }
 
     @And("User cannot click Sign In button on Login Page")
     public void userCannotClickSignInButtonOnLoginPage() {
         boolean statusButton = loginPage.disabledButton();
-
         Assert.assertFalse(statusButton);
     }
 

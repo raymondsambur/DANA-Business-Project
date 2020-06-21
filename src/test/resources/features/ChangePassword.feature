@@ -19,7 +19,7 @@ Feature: Change Password
     And User tap Change button on Change Password page
     Then User is on My Account page
 
-  @CheckErrorMessageForInvalidFormat
+  @ErrorMessageInvalidFormat
   Scenario Outline: Check error message for invalid format of New Password
     Given User is on Change Password page
     When User input "<NewPassword>" as New Password on Change Password page
@@ -65,7 +65,7 @@ Feature: Change Password
       #Combination Alphabet, Numeric, Symbols and Lowercase
       | p@ssw0rd     | p@ssw0rd             |
 
-  @CheckErrorMessageForEmptyNewPassword
+  @ErrorMessageEmptyNewPassword
   Scenario Outline: Check error message for empty New Password field
     Given User is on Change Password page
     When User input "<NewPassword>" as Confirmation Password on Change Password page
@@ -110,7 +110,7 @@ Feature: Change Password
       #Combination Alphabet, Numeric, Symbols and Lowercase
       | p@ssw0rd     |
 
-  @CheckErrorMessageForEmptyConfirmationPassword
+  @ErrorMessageEmptyConfirmationPassword
   Scenario Outline: Check error message for empty Confirmation Password
     Given User is on Change Password page
     When User input "<ConfirmationPassword>" as Confirmation Password on Change Password page

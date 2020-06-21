@@ -9,12 +9,12 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class AndroidDriverHooks {
 
-    @Before(value = "@Android")
+    @Before()
     public void initializeWebdriver() {
         AndroidDriverInstance.initialize();
     }
 
-    @After(value = "@Android")
+    @After()
     public void quitWebdriver(Scenario scenario) {
         if (scenario.isFailed()){
             scenario.embed(((TakesScreenshot) AndroidDriverInstance.androidDriver).getScreenshotAs(OutputType.BYTES), "image/png");

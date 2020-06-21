@@ -1,4 +1,3 @@
-@Android
 @Login
 Feature: Login
 

@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import project.PageFunctions;
 import project.androidDriver.AndroidDriverInstance;
 import project.locators.LoginLocator;
 
 public class LoginPage {
     public boolean isOnLoginPage(){
-        WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 15);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocator.IMAGE_LOGIN)).isDisplayed();
+        return PageFunctions.waitABit(LoginLocator.IMAGE_LOGIN).isDisplayed();
     }
 
     public void inputPhone(String number){
@@ -31,13 +31,11 @@ public class LoginPage {
     }
 
     public boolean checkWarningText(){
-        WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver,15);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocator.TEXT_ERROR_MESSAGE)).isDisplayed();
+        return PageFunctions.waitABit(LoginLocator.TEXT_ERROR_MESSAGE).isDisplayed();
     }
 
     public boolean checkWarningTextPassword(){
-        WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver,15);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocator.TEXT_ERROR_MESSAGE)).isDisplayed();
+        return PageFunctions.waitABit(LoginLocator.TEXT_ERROR_MESSAGE).isDisplayed();
     }
 
     public String getWarningText(){

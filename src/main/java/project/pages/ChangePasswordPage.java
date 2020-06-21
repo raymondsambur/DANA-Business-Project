@@ -1,13 +1,14 @@
 package project.pages;
 
 import org.openqa.selenium.WebElement;
+import project.PageFunctions;
 import project.locators.ChangePasswordLocator;
 
 import static project.androidDriver.AndroidDriverInstance.androidDriver;
 
 public class ChangePasswordPage implements ChangePasswordLocator {
 
-    public boolean onChangePasswordPage() { return androidDriver.findElement(TEXT_CHANGE_PASSWORD_TITLE).isDisplayed(); }
+    public boolean onChangePasswordPage() { return PageFunctions.waitABit(TEXT_CHANGE_PASSWORD_TITLE).isDisplayed(); }
 
     public void inputNewPassword(String newPassword) { androidDriver.findElement(INPUT_NEW_PASSWORD).sendKeys(newPassword); }
     public void inputRePassword(String rePassword) { androidDriver.findElement(INPUT_RE_PASSWORD).sendKeys(rePassword); }

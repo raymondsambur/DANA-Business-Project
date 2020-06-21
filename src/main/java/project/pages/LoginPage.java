@@ -42,7 +42,6 @@ public class LoginPage {
 
     public String getWarningText(){
         WebElement warningText = AndroidDriverInstance.androidDriver.findElement(LoginLocator.TEXT_ERROR_MESSAGE);
-
         return warningText.getText();
     }
 

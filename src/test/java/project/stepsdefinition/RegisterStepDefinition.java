@@ -23,7 +23,7 @@ public class RegisterStepDefinition {
         registerPage.inputName(name);
     }
 
-    @And("User input email {string} on name text field")
+    @When("User input email {string} on name text field")
     public void userInputEmailOnNameTextField(String email) {
         registerPage.inputEmail(email);
     }
@@ -33,7 +33,7 @@ public class RegisterStepDefinition {
         registerPage.inputPhone(phone);
     }
 
-    @And("User input Password {string} on password text field")
+    @When("User input Password {string} on password text field")
     public void userInputPasswordOnPasswordTextField(String password) {
         registerPage.inputPassword(password);
     }

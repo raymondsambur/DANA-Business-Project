@@ -35,7 +35,7 @@ Feature: Login
   @Invalid
   Scenario: 5. user login with empty phone number but correct password
     Given User is on Login Page
-    When User didn't input phone number on phone number field
+    When User input phone number "" on phone number field
     And User input password "P@ssw0rd" on password field
     And User cannot click Sign In button on Login Page
     Then User see error message "Phone Number cannot be empty!"
@@ -72,14 +72,6 @@ Feature: Login
       | !@#$%^&*(    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
       | 😭           | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
 
-  @Emot
-  Scenario: 7. user login with 13 digits phone number but correct password
-    Given User is on Login Page
-    When User input phone number "81394577665" on phone number field
-    And User input password "P@ssw0rd😭" on password field
-    And User cannot click Sign In button on Login Page
-    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
-
   @Invalid
   Scenario: 13. user login with prefix 62 phone number but correct password
     Given User is on Login Page
@@ -100,7 +92,7 @@ Feature: Login
   Scenario: 15. user login with correct phone number but empty password
     Given User is on Login Page
     When User input phone number "81394577665" on phone number field
-    And User didn't input password on password field
+    And User input password "" on password field
     And User cannot click Sign In button on Login Page
     Then User see error message "Password cannot be empty!"
 
@@ -170,17 +162,17 @@ Feature: Login
     When User input phone number "81394577665" on phone number field
     Then User see no error message
 
-  @PhoneField
+  @PhoneField @1
   Scenario: User left empty phone number
     Given User is on Login Page
-    When User didn't input phone number on phone number field
+    When User input phone number "" on phone number field
     Then User see error message "Phone Number cannot be empty!"
 
   @PhoneField
   Scenario Outline: User input invalid format phone number
     Given User is on Login Page
     When User input phone number "<phone number>" on phone number field
-    Then User see error message "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
+    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
 
     Examples:
       | phone number  |
@@ -204,7 +196,7 @@ Feature: Login
   @PasswordField
   Scenario: User left empty password
     Given User is on Login Page
-    When User didn't input password on password field
+    When User input password "" on password field
     Then User see error message "Password cannot be empty!" on password field
   @PasswordField
   Scenario Outline: User input invalid format password
@@ -248,7 +240,7 @@ Feature: Login
     #Then User see "••••••••" on password field
     Then User see password is masked
 
-  @Show
+  @Show @2
   Scenario: User input invalid format password and click hide/show password button
     Given User is on Login Page
     When User input password "P@ssw0r" on password field
@@ -263,12 +255,14 @@ Feature: Login
     Then User see password is masked
 
   #FORGOT PASSWORD BUTTON
+  @forpassbutton
   Scenario: User wants to Forgot his own Password
     Given User is on Login Page
     When User click Forgot Password button
     Then User directed to Forgot Password Page
 
   #REGISTER BUTTON
+  @registerbutton
   Scenario: User wants to create new account
     Given User is on Login Page
     When User click Register button

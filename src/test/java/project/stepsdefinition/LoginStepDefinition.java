@@ -7,11 +7,13 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import project.pages.HomePage;
 import project.pages.LoginPage;
+import project.pages.RegisterPage;
 
 public class LoginStepDefinition {
 
     private LoginPage loginPage = new LoginPage();
     private HomePage homePage = new HomePage();
+    private RegisterPage registerPage = new RegisterPage();
 
     @Given("User is on Login Page")
     public void userIsOnLoginPage() {
@@ -95,7 +97,7 @@ public class LoginStepDefinition {
 
     @Then("User directed to Register Page")
     public void userDirectedToRegisterPage() {
-        /////////////////
+        registerPage.isOnRegisterPage();
     }
 
     @Then("User see error message {string} on password field")

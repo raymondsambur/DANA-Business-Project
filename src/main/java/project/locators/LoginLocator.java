@@ -17,8 +17,8 @@ public interface LoginLocator {
 
     // Button
     By BUTTON_LOGIN = MobileBy.id("bt_login");
-    By BUTTON_REGISTER = MobileBy.id("btnToRegister");
-    By BUTTON_FORGOT_PASSWORD = MobileBy.id("btnLoginForgotPassword");
+    By BUTTON_REGISTER = MobileBy.id("tv_sign_up_login");
+    By BUTTON_FORGOT_PASSWORD = MobileBy.id("tv_forgot_password_login");
 
     // Image View
     By IMAGE_LOGIN = MobileBy.xpath("//android.widget.ImageView");

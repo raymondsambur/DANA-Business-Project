@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public interface RegisterLocator {
 
     // Text View
-    By TEXT_REGISTER_TITLE = MobileBy.id("tvRegisterTitle");
+    By TEXT_REGISTER_TITLE = MobileBy.xpath("//android.widget.TextView[@text = 'Register']");
     By TEXT_CODE_AREA = MobileBy.id("tvRegisterCodeArea");
     By TEXT_ERROR_NAME = MobileBy.id("tvRegisterErrorName");
     By TEXT_ERROR_PHONE = MobileBy.id("tvRegisterErrorPhoneNumber");

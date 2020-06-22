@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public interface LoginLocator {
 
     // Text View
-    By TEXT_TITLE = MobileBy.id("tvLoginTitle");
+    By TEXT_TITLE = MobileBy.xpath("//android.widget.TextView[1][@text = 'Login']");
     By TEXT_PHONE_CODE = MobileBy.id("tvLoginPhoneCode");
     By TEXT_AREA_CODE = MobileBy.id("tvLoginCodeArea");
     By TEXT_ERROR_MESSAGE = MobileBy.id("textinput_error");

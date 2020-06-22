@@ -11,4 +11,4 @@
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
-    Then User directed to the Verification Page
+    Then User directed to the Login Page

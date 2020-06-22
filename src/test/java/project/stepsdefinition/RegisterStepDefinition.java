@@ -4,11 +4,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import project.pages.LoginPage;
 import project.pages.RegisterPage;
 
 public class RegisterStepDefinition {
 
     RegisterPage registerPage = new RegisterPage();
+    LoginPage loginPage = new LoginPage();
 
     @Given("User is on DANA bussiness Register Page")
     public void userIsOnDANABussinessRegisterPage() {
@@ -45,7 +47,8 @@ public class RegisterStepDefinition {
         registerPage.tapRegisterButton();
     }
 
-    @Then("User directed to the Verification Page")
-    public void userDirectedToTheVerificationPage() {
+    @Then("User directed to the Login Page")
+    public void userDirectedToTheLoginPage() {
+        loginPage.isOnLoginPage();
     }
 }

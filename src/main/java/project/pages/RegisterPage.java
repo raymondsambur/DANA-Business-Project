@@ -3,6 +3,7 @@ package project.pages;
 import org.openqa.selenium.WebElement;
 import project.PageFunctions;
 import project.androidDriver.AndroidDriverInstance;
+import project.locators.LoginLocator;
 import project.locators.RegisterLocator;
 
 public class RegisterPage {
@@ -40,5 +41,9 @@ public class RegisterPage {
         registerBtn.click();
     }
 
+    public boolean buttonDisabled(){
+        WebElement registerButton = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.BUTTON_REGISTER);
+        return registerButton.isEnabled();
+    }
 
 }

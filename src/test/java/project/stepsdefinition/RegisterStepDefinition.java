@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import project.pages.LoginPage;
 import project.pages.RegisterPage;
 
@@ -50,5 +51,11 @@ public class RegisterStepDefinition {
     @Then("User directed to the Login Page")
     public void userDirectedToTheLoginPage() {
         loginPage.isOnLoginPage();
+    }
+
+    @Then("User see Register button is unclickable")
+    public void userSeeRegisterButtonIsUnclickable() {
+        boolean statusButton = registerPage.buttonDisabled();
+        Assert.assertFalse(statusButton);
     }
 }

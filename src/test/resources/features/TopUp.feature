@@ -13,7 +13,7 @@ Feature: TopUp
   Scenario Outline: User top up with valid amount
     Given User is on Top Up page
     When  User input nominal "<nominal>" on top up nominal text field on Top Up Page
-    When  User tap Pay button on Top Up Page
+    And  User tap Pay button on Top Up Page
     Then  User is on Success Payment Result Page
     Examples:
       |nominal|
@@ -25,7 +25,7 @@ Feature: TopUp
   Scenario Outline: User top up with invalid amount
     Given User is on Top Up page
     When  User input nominal "<nominal>" on top up nominal text field on Top Up Page
-    When  User tap Pay button on Top Up Page
+    And  User tap Pay button on Top Up Page
     Then  User is on Failed Payment Result Page
     Examples:
       |nominal|
@@ -36,7 +36,7 @@ Feature: TopUp
   Scenario Outline: User top up with invalid format amount
     Given User is on Top Up page
     When  User input nominal "<nominal>" on top up nominal text field on Top Up Page
-    When  User tap Pay button on Top Up Page
+    And  User tap Pay button on Top Up Page
     Then  User see error message "Input Number Only!" on Top Up Page
     Examples:
       |nominal    |
@@ -46,9 +46,9 @@ Feature: TopUp
       |!@#$1234,.;|
       |🙃🙃🙃🙃🙃🙃 |
 
-  @Empty
-  Scenario : User top up with empty amount
+  @EmptyInput
+  Scenario: User top up with empty amount
     Given User is on Top Up page
     When  User input nominal " " on top up nominal text field on Top Up Page
-    When  User tap Pay button on Top Up Page
+    And  User tap Pay button on Top Up Page
     Then  User see error message "Amount Field Cannot be Empty!" on Top Up Page

@@ -74,6 +74,14 @@ Feature: Register
     When User input name "" on name text field
     Then User see name field error message "Name Field cannot be empty!"
 
+  @NameFieldNegativeWithScenarioOutline
+  Scenario Outline: 1. User input invalid name on name text field
+    Given User is on DANA bussiness Register Page
+    When User input name "<namefield>" on name text field
+    Then User see name field error message "Name field should alphabet only with 30 characters maximum!"
+    Examples:
+    |namefield|
+
 
 # Email Field
   @EmailFieldPositive
@@ -83,10 +91,18 @@ Feature: Register
     Then User see no error message
 
   @EmailFieldNegativeEmpty
-  Scenario: User input didnt input email on email text field
+  Scenario: User didnt input email on email text field
     Given User is on DANA bussiness Register Page
     When User input email "" on email text field
     Then User see email field error message "Email Field cannot be empty"
+
+  @EmailFieldNegativeWithScenarioOutline
+  Scenario Outline: User input invalid email on email text field
+    Given User is on DANA bussiness Register Page
+    When User input email "<emailfield>" on email text field
+    Then User see email field error message "Wrong Email Format! Example : email123@gmail.com"
+    Examples:
+    |emailfield|
 
 # Phone Field
   @PhoneFieldPositive
@@ -101,6 +117,15 @@ Feature: Register
     When User input phone number "81212341234" on phone number text field
     Then User see phone field error message "Phone Number Field cannot be empty!"
 
+  @PhoneFieldNegativeWithScenarioOutline
+  Scenario Outline: User input invalid Phone number on Phone number text field
+    Given User is on DANA bussiness Register Page
+    When User input phone number "<phonefield>" on phone number text field
+    Then User see phone field error message "Wrong Phone Number format! All Numbers and 9 - 12 digits!"
+    Examples:
+    |phonefield|
+
+
 # Password Field
   @PasswordFieldPositive
   Scenario: 1. User input valid password format on password text field
@@ -113,6 +138,14 @@ Feature: Register
     Given User is on DANA bussiness Register Page
     When User input Password "" on password text field
     Then User see password field error message "Password Field cannot be empty!"
+
+  @PasswordFieldNegativeWithScenarioOutline
+  Scenario Outline: User input invalid password on password text field
+    Given User is on DANA bussiness Register Page
+    When User input Password "<passwordfield>" on password text field
+    Then User see password field error message "Password should be 8 digits and contains : a-z, A-Z, 1-9, Symbol!"
+    Examples:
+    |passwordfield|
 
 # Confirmation Field
   @ConfirmationPositive
@@ -128,6 +161,13 @@ Feature: Register
     When User input Password "P@ssw0rd" on password text field
     And User input Password "" on password confirmation text field
     Then User see confirmaion field error message "Please Re-enter your password!"
+
+  @ConfirmationNegativeOnly
+  Scenario: 1. User didnt re-type match password confirmation password text field
+    Given User is on DANA bussiness Register Page
+    When User input Password "P@ssw0rd" on password text field
+    And User input Password "Password" on password confirmation text field
+    Then User see confirmaion field error message "Password doesn't match!"
 
 # Back Button
   @BackButton

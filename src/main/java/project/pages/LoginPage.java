@@ -12,7 +12,7 @@ import project.locators.LoginLocator;
 
 public class LoginPage {
     public boolean isOnLoginPage(){
-        return PageFunctions.waitABit(LoginLocator.IMAGE_LOGIN).isDisplayed();
+        return PageFunctions.waitABit(LoginLocator.TEXT_TITLE).isDisplayed();
     }
 
     public void inputPhone(String number){

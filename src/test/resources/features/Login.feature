@@ -2,7 +2,7 @@
 Feature: Login
 
   #BUTTON
-  @Valid
+  @Valid @aaaa
   Scenario: 1. user login with correct phone number and password
     Given User is on Login Page
     When User input phone number "81394577665" on phone number field

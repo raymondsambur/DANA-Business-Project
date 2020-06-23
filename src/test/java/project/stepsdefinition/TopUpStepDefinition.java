@@ -2,6 +2,7 @@ package project.stepsdefinition;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import project.pages.TopUpPage;
 
 public class TopUpStepDefinition {
@@ -20,7 +21,9 @@ public class TopUpStepDefinition {
     public void userIsOnFailedPaymentResultPage() { }
 
     @Then("User see error message {string} on Top Up Page")
-    public void userSeeErrorMessageOnTopUpPage(String erMessage) { topUpPage.errorMessage(erMessage); }
+    public void userSeeErrorMessageOnTopUpPage(String erMessage) {
+        String actual = topUpPage.errorMessage();
+        Assert.assertEquals(erMessage, actual); }
 
     @When("User tap Back Button on Top Up Page")
     public void userTapBackButtonOnTopUpPage() { topUpPage.tapBackButton(); }

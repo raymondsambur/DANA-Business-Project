@@ -1,4 +1,6 @@
 package project.pages;
 
-public class TopUpResultPage implements {
+import project.locators.TopUpResultLocator;
+
+public class TopUpResultPage implements TopUpResultLocator {
 }

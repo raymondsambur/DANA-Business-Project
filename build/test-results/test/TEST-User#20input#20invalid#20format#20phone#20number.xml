@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="User input invalid format phone number" tests="36" skipped="0" failures="0" errors="0" timestamp="2020-06-22T15:14:54" hostname="dnid0666l01.local" time="248.087">
+  <properties/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="0.991"/>
+  <testcase name="User input phone number &quot;81300000&quot; on phone number field" classname="User input invalid format phone number" time="5.955"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.664"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="15.932"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="1.029"/>
+  <testcase name="User input phone number &quot;8130000000000&quot; on phone number field" classname="User input invalid format phone number" time="22.815"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.742"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="51.396"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="1.033"/>
+  <testcase name="User input phone number &quot;813abcd00&quot; on phone number field" classname="User input invalid format phone number" time="22.835"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.667"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="32.339"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="1.021"/>
+  <testcase name="User input phone number &quot;abcdefghi&quot; on phone number field" classname="User input invalid format phone number" time="3.426"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.652"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="31.396"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="0.871"/>
+  <testcase name="User input phone number &quot;81300000!&quot; on phone number field" classname="User input invalid format phone number" time="12.907"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.693"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="27.77"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="0.96"/>
+  <testcase name="User input phone number &quot;!@#$%^&amp;*(&quot; on phone number field" classname="User input invalid format phone number" time="12.796"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.702"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="23.089"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="0.995"/>
+  <testcase name="User input phone number &quot;??&quot; on phone number field" classname="User input invalid format phone number" time="12.791"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.63"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="27.808"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="1.066"/>
+  <testcase name="User input phone number &quot;62813000000&quot; on phone number field" classname="User input invalid format phone number" time="12.72"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.638"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="31.235"/>
+  <testcase name="User is on Login Page" classname="User input invalid format phone number" time="0.989"/>
+  <testcase name="User input phone number &quot;08130000000&quot; on phone number field" classname="User input invalid format phone number" time="4.985"/>
+  <testcase name="User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;" classname="User input invalid format phone number" time="0.661"/>
+  <testcase name="classMethod" classname="User input invalid format phone number" time="14.948"/>
+  <system-out><![CDATA[
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:179?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:180?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:181?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:182?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:183?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:184?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:185?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:186?[0m
+
+@Login @PhoneField
+Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:187?[0m
+]]></system-out>
+  <system-err><![CDATA[Jun 22, 2020 10:14:54 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:15:29 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:16:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:16:52 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:17:10 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:17:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:18:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:18:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+Jun 22, 2020 10:18:55 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="User wants to create new account" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-06-22T15:32:51" hostname="dnid0666l01.local" time="14.966">
+  <properties/>
+  <testcase name="User is on Login Page" classname="User wants to create new account" time="1.001"/>
+  <testcase name="User click Register button" classname="User wants to create new account" time="12.234"/>
+  <testcase name="User directed to Register Page" classname="User wants to create new account" time="1.229"/>
+  <testcase name="classMethod" classname="User wants to create new account" time="31.022"/>
+  <system-out><![CDATA[
+@Login @registerbutton
+Scenario: User wants to create new account ?[90m# src/test/resources/features/Login.feature:266?[0m
+]]></system-out>
+  <system-err><![CDATA[Jun 22, 2020 10:32:51 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

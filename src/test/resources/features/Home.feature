@@ -3,8 +3,8 @@ Feature: Home
 
   Background:
     Given User is on Login Page
-    And User input phone number "8123456789" on phone number field
-    And User input password "Password@123" on password field
+    And User input phone number "81394577665" on phone number field
+    And User input password "P@ssw0rd" on password field
     And User click Sign In button on Login Page
 
   @ValidateBalance

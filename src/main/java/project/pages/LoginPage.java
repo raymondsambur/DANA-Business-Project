@@ -79,4 +79,14 @@ public class LoginPage {
         WebElement registerButton = AndroidDriverInstance.androidDriver.findElement(LoginLocator.BUTTON_REGISTER);
         registerButton.click();
     }
+
+    public boolean checkPopUp(){
+        return PageFunctions.waitABit(LoginLocator.POP_UP_MESSAGE).isDisplayed();
+    }
+
+    public String getPopUpMessage(){
+        WebElement message = AndroidDriverInstance.androidDriver.findElement(LoginLocator.POP_UP_MESSAGE);
+
+        return message.getText();
+    }
 }

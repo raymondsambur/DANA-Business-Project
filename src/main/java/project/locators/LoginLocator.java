@@ -10,6 +10,7 @@ public interface LoginLocator {
     By TEXT_PHONE_CODE = MobileBy.id("tvLoginPhoneCode");
     By TEXT_AREA_CODE = MobileBy.id("tvLoginCodeArea");
     By TEXT_ERROR_MESSAGE = MobileBy.id("textinput_error");
+    By POP_UP_MESSAGE = MobileBy.id("snackbar_text");
 
     // Edit Text
     By INPUT_PHONE_NUMBER = MobileBy.id("et_phone_login");

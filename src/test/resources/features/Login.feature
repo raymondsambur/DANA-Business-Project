@@ -16,21 +16,21 @@ Feature: Login
     When User input phone number "81394577665" on phone number field
     And User input password "P@ssword123" on password field
     And User click Sign In button on Login Page
-    Then User see error message "Invalid Phone Number or Password"
+    Then User see pop up message "Incorrect Phone Number or Password. Please input your correct Phone Number and Password"
 
   Scenario: 3. user login with incorrect phone number but correct password
     Given User is on Login Page
     When User input phone number "81394577000" on phone number field
     And User input password "P@ssw0rd" on password field
     And User click Sign In button on Login Page
-    Then User see error message "Invalid Phone Number or Password"
+    Then User see pop up message "Incorrect Phone Number or Password. Please input your correct Phone Number and Password"
 
   Scenario: 4. user login with incorrect phone number and password
     Given User is on Login Page
     When User input phone number "81394577000" on phone number field
     And User input password "P@ssword123" on password field
     And User click Sign In button on Login Page
-    Then User see error message "Invalid Phone Number or Password"
+    Then User see pop up message "Incorrect Phone Number or Password. Please input your correct Phone Number and Password"
 
   @Invalid
   Scenario: 5. user login with empty phone number but correct password

@@ -113,4 +113,12 @@ public class LoginStepDefinition {
         boolean status = loginPage.isPasswordMasked();
         Assert.assertTrue(status);
     }
+
+    @Then("User see pop up message {string}")
+    public void userSeePopUpMessage(String expected) {
+        loginPage.checkPopUp();
+        String actual = loginPage.getPopUpMessage();
+
+        Assert.assertEquals(expected, actual);
+    }
 }

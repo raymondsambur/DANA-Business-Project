@@ -30,6 +30,10 @@ public interface MyAccountLocator {
     By BUTTON_BACK = MobileBy.id("iv_back_arrow");
     By BUTTON_SETTING = MobileBy.id("iv_setting");
     By BUTTON_BALANCE = MobileBy.xpath("(//android.widget.ImageView[@content-desc='Icon Postfix'])[1]");
+    By BUTTTON_LOGOUT_YES = MobileBy.xpath("//android.widget.Button[2]");
+    By BUTTON_LOGOUT_NO = MobileBy.xpath("//android.widget.Button[1]");
+
+    By TOAST_ERROR_MESSAGE = MobileBy.xpath("//android.widget.Toast[1]");
 
 
 }

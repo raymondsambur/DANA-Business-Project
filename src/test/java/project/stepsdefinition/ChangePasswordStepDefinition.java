@@ -6,11 +6,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import project.pages.ChangePasswordPage;
+import project.pages.HomePage;
 import project.pages.MyAccountPage;
 
 public class ChangePasswordStepDefinition {
      MyAccountPage myAccountPage = new MyAccountPage();
      ChangePasswordPage changePasswordPage = new ChangePasswordPage();
+     HomePage homePage = new HomePage();
 
     @And("User is on Home Page")
     public void userIsOnHomePage() {
@@ -18,6 +20,7 @@ public class ChangePasswordStepDefinition {
 
     @And("User tap My Account button on Home page")
     public void userTapMyAccountButtonOnHomePage() {
+        homePage.tapMyAccount();
     }
 
     @And("User is on My Account page")

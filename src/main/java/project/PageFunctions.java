@@ -10,7 +10,7 @@ import static project.androidDriver.AndroidDriverInstance.androidDriver;
 public class PageFunctions {
 
     public static WebElement waitABit(By element) {
-        WebDriverWait wait = new WebDriverWait(androidDriver, 50);
+        WebDriverWait wait = new WebDriverWait(androidDriver, 10);
         return wait.until(ExpectedConditions.presenceOfElementLocated(element));
     }
 

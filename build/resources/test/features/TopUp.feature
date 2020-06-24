@@ -3,8 +3,8 @@ Feature: TopUp
 
   Background:
     Given User is on Login Page
-    And User input phone number "81394577665" on phone number field
-    And User input password "P@ssw0rd" on password field
+    And User input phone number "811123123" on phone number field
+    And User input password "Pass@123" on password field
     And User click Sign In button on Login Page
     And User is on Home Page
     And User tap Top Up Button on Home Page

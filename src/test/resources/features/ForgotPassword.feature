@@ -59,13 +59,13 @@ Feature: Forgot Password
         | boboy@gmail.          |
         | boboy @gmail.com      |
 
-    Scenario : FP-02-09 : User Input empty email
+    Scenario: FP-02-09 : User Input empty email
       Given User is on forgot password page
       When User input email "" on Email Field
       Then User can not click send button
 
     @BackButtonForgotPassword
-    Scenario : FP-03-01 : User Back to Login Page by click Back Arrow Button
+    Scenario: FP-03-01 : User Back to Login Page by click Back Arrow Button
       Given User is on forgot password page
       When User Click back button on Forgot Password page
       Then User is on Login Page

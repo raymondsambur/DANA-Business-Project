@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="User input valid format phone number" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-06-24T05:36:45" hostname="LAPTOP-8ROAKM94" time="5.022">
+<testsuite name="User input valid format phone number" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-06-24T07:07:52" hostname="LAPTOP-8ROAKM94" time="4.781">
   <properties/>
-  <testcase name="User is on Login Page" classname="User input valid format phone number" time="3.683"/>
-  <testcase name="User input phone number &quot;81394577665&quot; on phone number field" classname="User input valid format phone number" time="0.693"/>
-  <testcase name="User see no error message" classname="User input valid format phone number" time="0.0"/>
-  <testcase name="classMethod" classname="User input valid format phone number" time="13.734"/>
+  <testcase name="User is on Login Page" classname="User input valid format phone number" time="3.582"/>
+  <testcase name="User input phone number &quot;81394577665&quot; on phone number field" classname="User input valid format phone number" time="0.687"/>
+  <testcase name="User see no error message" classname="User input valid format phone number" time="0.001"/>
+  <testcase name="classMethod" classname="User input valid format phone number" time="13.392"/>
   <system-out><![CDATA[
 @Login @PhoneField
 Scenario: User input valid format phone number                     ?[90m# src/test/resources/features/Login.feature:160?[0m
 ]]></system-out>
-  <system-err><![CDATA[Jun 24, 2020 12:36:45 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[Jun 24, 2020 2:07:52 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

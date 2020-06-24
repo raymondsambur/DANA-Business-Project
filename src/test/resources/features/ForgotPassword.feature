@@ -16,7 +16,7 @@ Feature: Forgot Password
     Scenario Outline: FP-01-02 - FP-01-07 : User input invalid email
       Given User is on forgot password page
       When User input email "<email>" on Email Field
-      Then User see error message on field "Wrong Email Format! Example : email123@gmail.com!"
+      Then User see error message on field "Wrong Email Format! Example : email123@gmail.com"
       Examples:
         |         email         |
         | boboy😭@gmail.com     |

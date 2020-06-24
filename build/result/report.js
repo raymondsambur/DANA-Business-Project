@@ -566,7 +566,7 @@ formatter.examples({
       "cells": [
         "😭",
         "P@ssw0rd",
-        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
+        "Phone Number cannot be empty!"
       ]
     }
   ]
@@ -919,18 +919,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User see error message \"Wrong Phone Number format! All Numbers and 9 – 12 digits!\"",
+  "name": "User see error message \"Phone Number cannot be empty!\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Wrong Phone Number format! All Numbers and 9 – 12 digits]!\u003e but was:\u003c[Phone Number cannot be empty]!\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)\r\n\tat ✽.User see error message \"Wrong Phone Number format! All Numbers and 9 – 12 digits!\"(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:65)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", null);
-formatter.write("scenario Fail");
 formatter.after({
   "status": "passed"
 });
@@ -1309,7 +1306,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "User see error message \"Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!\"",
+  "name": "User see error message \"\u003cerror message\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -1320,103 +1317,120 @@ formatter.examples({
     {
       "cells": [
         "phone number",
-        "password"
+        "password",
+        "error message"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "Passw0rd"
+        "Passw0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "P@ssword"
+        "P@ssword",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "Password"
+        "Password",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "p@ssw0rd"
+        "p@ssw0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "passw0rd"
+        "passw0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "p@ssword"
+        "p@ssword",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "password"
+        "password",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "P@SSW0RD"
+        "P@SSW0RD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "PASSW0RD"
+        "PASSW0RD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "P@SSWORD"
+        "P@SSWORD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "PASSWORD"
+        "PASSWORD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "123$%^78"
+        "123$%^78",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "12345678"
+        "12345678",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "!@#$%^\u0026*"
+        "!@#$%^\u0026*",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "P@ss w0rd"
+        "P@ss w0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
         "81394577665",
-        "P@ssw0rd😭"
+        "P@ssw0rd😭",
+        "Password cannot be empty!"
       ]
     }
   ]
@@ -2561,18 +2575,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User see error message \"Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!\"",
+  "name": "User see error message \"Password cannot be empty!\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cPassword [should be 8 digits and contains : a–z, A–Z, 1–9, Symbol]!\u003e but was:\u003cPassword [cannot be empty]!\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)\r\n\tat ✽.User see error message \"Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!\"(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:121)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", null);
-formatter.write("scenario Fail");
 formatter.after({
   "status": "passed"
 });
@@ -2696,7 +2707,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "name": "User see error message \"Wrong Phone Number format! All Numbers and 9 – 12 digits!\"",
+  "name": "User see error message \"\u003cerror message\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -2706,52 +2717,62 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "phone number"
+        "phone number",
+        "error message"
       ]
     },
     {
       "cells": [
-        "81300000"
+        "81300000",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     },
     {
       "cells": [
-        "8130000000000"
+        "8130000000000",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     },
     {
       "cells": [
-        "813abcd00"
+        "813abcd00",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     },
     {
       "cells": [
-        "abcdefghi"
+        "abcdefghi",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     },
     {
       "cells": [
-        "81300000!"
+        "81300000!",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     },
     {
       "cells": [
-        "!@#$%^\u0026*("
+        "!@#$%^\u0026*(",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     },
     {
       "cells": [
-        "😭"
+        "😭",
+        "Phone Number cannot be empty!"
       ]
     },
     {
       "cells": [
-        "62813000000"
+        "62813000000",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     },
     {
       "cells": [
-        "08130000000"
+        "08130000000",
+        "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
       ]
     }
   ]
@@ -3087,18 +3108,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User see error message \"Wrong Phone Number format! All Numbers and 9 – 12 digits!\"",
+  "name": "User see error message \"Phone Number cannot be empty!\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Wrong Phone Number format! All Numbers and 9 – 12 digits]!\u003e but was:\u003c[Phone Number cannot be empty]!\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)\r\n\tat ✽.User see error message \"Wrong Phone Number format! All Numbers and 9 – 12 digits!\"(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:175)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded2.png", null);
-formatter.write("scenario Fail");
 formatter.after({
   "status": "passed"
 });
@@ -3317,7 +3335,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "name": "User see error message \"Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!\" on password field",
+  "name": "User see error message \"\u003cerror message\u003e\" on password field",
   "keyword": "Then "
 });
 formatter.examples({
@@ -3327,97 +3345,116 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "password"
+        "password",
+        "error message"
       ]
     },
     {
       "cells": [
-        "P@ssw0r"
+        "P@ssw0r",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "P@ssw0rd1234567890abc"
+        "P@ssw0rd1234567890abc",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "Passw0rd"
+        "Passw0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "P@ssword"
+        "P@ssword",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "Password"
+        "Password",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "p@ssw0rd"
+        "p@ssw0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "passw0rd"
+        "passw0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "p@ssword"
+        "p@ssword",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "password"
+        "password",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "P@SSW0RD"
+        "P@SSW0RD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "PASSW0RD"
+        "PASSW0RD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "P@SSWORD"
+        "P@SSWORD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "PASSWORD"
+        "PASSWORD",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "123$%^78"
+        "123$%^78",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "12345678"
+        "12345678",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "!@#$%^\u0026*"
+        "!@#$%^\u0026*",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "P@ss w0rd"
+        "P@ss w0rd",
+        "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
       ]
     },
     {
       "cells": [
-        "P@ssw0rd😭"
+        "P@ssw0rd😭",
+        "Password cannot be empty!"
       ]
     }
   ]
@@ -4292,18 +4329,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User see error message \"Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!\" on password field",
+  "name": "User see error message \"Password cannot be empty!\" on password field",
   "keyword": "Then "
 });
 formatter.match({
   "location": "project.stepsdefinition.LoginStepDefinition.userSeeErrorMessageOnPhoneNumberField(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-8ROAKM94\u0027, ip: \u0027192.168.0.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {app: D:\\DANA\\Debrief 2\\APP\\DANAB..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\\DANA\\Debrief 2\\APP\\DANAB..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: c5a08757-1ea6-4a85-9467-42ba4e1e8c14\n*** Element info: {Using\u003dxpath, value\u003d//android.widget.TextView[contains(@text, \u0027Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)\r\n\tat io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat project.pages.LoginPage.getWarningTextPassword(LoginPage.java:47)\r\n\tat project.stepsdefinition.LoginStepDefinition.userSeeErrorMessageOnPhoneNumberField(LoginStepDefinition.java:106)\r\n\tat ✽.User see error message \"Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!\" on password field(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:205)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded3.png", null);
-formatter.write("scenario Fail");
 formatter.after({
   "status": "passed"
 });

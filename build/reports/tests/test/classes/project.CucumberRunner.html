@@ -144,19 +144,7 @@
   ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;?&quot;?[0m?[32m on phone number field?[0m                                 ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
   ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ssw0rd&quot;?[0m?[32m on password field?[0m                                    ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
   ?[32mAnd ?[0m?[32mUser cannot click Sign In button on Login Page?[0m                                      ?[90m# project.stepsdefinition.LoginStepDefinition.userCannotClickSignInButtonOnLoginPage()?[0m
-  ?[31mThen ?[0m?[31mUser see error message ?[0m?[31m?[1m&quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
-      ?[31morg.junit.ComparisonFailure: expected:&lt;[Wrong Phone Number format! All Numbers and 9 – 12 digits]!&gt; but was:&lt;[Phone Number cannot be empty]!&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
-	at ?.User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:65)
-?[0m
-
-    Embedding null [image/png 123404 bytes]
-
-
-    scenario Fail
-
+  ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Phone Number cannot be empty!&quot;?[0m                             ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                             ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;62813000000&quot;?[0m?[32m on phone number field?[0m                        ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
   ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ssw0rd&quot;?[0m?[32m on password field?[0m                                    ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
@@ -257,23 +245,11 @@
   ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ss w0rd&quot;?[0m?[32m on password field?[0m                                           ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
   ?[32mAnd ?[0m?[32mUser cannot click Sign In button on Login Page?[0m                                              ?[90m# project.stepsdefinition.LoginStepDefinition.userCannotClickSignInButtonOnLoginPage()?[0m
   ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot;?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
-  ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                                     ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
-  ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;81394577665&quot;?[0m?[32m on phone number field?[0m                                ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
-  ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ssw0rd?&quot;?[0m?[32m on password field?[0m                                          ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
-  ?[32mAnd ?[0m?[32mUser cannot click Sign In button on Login Page?[0m                                              ?[90m# project.stepsdefinition.LoginStepDefinition.userCannotClickSignInButtonOnLoginPage()?[0m
-  ?[31mThen ?[0m?[31mUser see error message ?[0m?[31m?[1m&quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot;?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
-      ?[31morg.junit.ComparisonFailure: expected:&lt;Password [should be 8 digits and contains : a–z, A–Z, 1–9, Symbol]!&gt; but was:&lt;Password [cannot be empty]!&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
-	at ?.User see error message &quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:121)
-?[0m
-
-    Embedding null [image/png 129469 bytes]
-
-
-    scenario Fail
-
+  ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                              ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;81394577665&quot;?[0m?[32m on phone number field?[0m                         ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ssw0rd?&quot;?[0m?[32m on password field?[0m                                   ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser cannot click Sign In button on Login Page?[0m                                       ?[90m# project.stepsdefinition.LoginStepDefinition.userCannotClickSignInButtonOnLoginPage()?[0m
+  ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Password cannot be empty!&quot;?[0m                                  ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                      ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;81394577665&quot;?[0m?[32m on phone number field?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
   ?[32mThen ?[0m?[32mUser see no error message?[0m                                   ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeNoErrorMessage()?[0m
@@ -298,21 +274,9 @@
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                             ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;!@#$%^&amp;*(&quot;?[0m?[32m on phone number field?[0m                          ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
   ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
-  ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                             ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
-  ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;?&quot;?[0m?[32m on phone number field?[0m                                 ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
-  ?[31mThen ?[0m?[31mUser see error message ?[0m?[31m?[1m&quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
-      ?[31morg.junit.ComparisonFailure: expected:&lt;[Wrong Phone Number format! All Numbers and 9 – 12 digits]!&gt; but was:&lt;[Phone Number cannot be empty]!&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
-	at ?.User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:175)
-?[0m
-
-    Embedding null [image/png 125015 bytes]
-
-
-    scenario Fail
-
+  ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                 ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;?&quot;?[0m?[32m on phone number field?[0m     ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Phone Number cannot be empty!&quot;?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                             ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mWhen ?[0m?[32mUser input phone number ?[0m?[32m?[1m&quot;62813000000&quot;?[0m?[32m on phone number field?[0m                        ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
   ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(java.lang.String)?[0m
@@ -376,53 +340,9 @@
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                                                       ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mWhen ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ss w0rd&quot;?[0m?[32m on password field?[0m                                                            ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
   ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot;?[0m?[32m on password field?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessageOnPhoneNumberField(java.lang.String)?[0m
-  ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                                                                       ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
-  ?[32mWhen ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ssw0rd?&quot;?[0m?[32m on password field?[0m                                                           ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
-  ?[31mThen ?[0m?[31mUser see error message ?[0m?[31m?[1m&quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot;?[0m?[31m on password field?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessageOnPhoneNumberField(java.lang.String)?[0m
-      ?[31morg.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-8ROAKM94', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\DANA\Debrief 2\APP\DANAB..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\DANA\Debrief 2\APP\DANAB..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c5a08757-1ea6-4a85-9467-42ba4e1e8c14
-*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text, 'Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at project.pages.LoginPage.getWarningTextPassword(LoginPage.java:47)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessageOnPhoneNumberField(LoginStepDefinition.java:106)
-	at ?.User see error message &quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot; on password field(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:205)
-?[0m
-
-    Embedding null [image/png 130274 bytes]
-
-
-    scenario Fail
-
+  ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                               ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ssw0rd?&quot;?[0m?[32m on password field?[0m                   ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mUser see error message ?[0m?[32m?[1m&quot;Password cannot be empty!&quot;?[0m?[32m on password field?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userSeeErrorMessageOnPhoneNumberField(java.lang.String)?[0m
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                     ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mWhen ?[0m?[32mUser input password ?[0m?[32m?[1m&quot;P@ssw0rd&quot;?[0m?[32m on password field?[0m           ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
   ?[32mAnd ?[0m?[32mUser click show password button?[0m                             ?[90m# project.stepsdefinition.LoginStepDefinition.userClickHideShowPasswordButton()?[0m
@@ -444,72 +364,9 @@ Session ID: c5a08757-1ea6-4a85-9467-42ba4e1e8c14
   ?[32mWhen ?[0m?[32mUser click Register button?[0m          ?[90m# project.stepsdefinition.LoginStepDefinition.userClickRegisterButton()?[0m
   ?[32mThen ?[0m?[32mUser directed to Register Page?[0m      ?[90m# project.stepsdefinition.LoginStepDefinition.userDirectedToRegisterPage()?[0m
 
-?[31mFailed scenarios:?[0m
-?[31mfile:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:73?[0m# 8 - 12. user login with non-numerical phone number but correct password
-?[31mfile:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:156?[0m# 18 - 33. user login with corret phone number but invalid password format
-?[31mfile:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:185?[0m# User input invalid format phone number
-?[31mfile:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:226?[0m# User input invalid format password
-
-70 Scenarios (?[31m4 failed?[0m, ?[32m66 passed?[0m)
-278 Steps (?[31m4 failed?[0m, ?[32m274 passed?[0m)
-17m47.280s
-
-
-org.junit.ComparisonFailure: expected:&lt;[Wrong Phone Number format! All Numbers and 9 – 12 digits]!&gt; but was:&lt;[Phone Number cannot be empty]!&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
-	at ?.User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:65)
-
-org.junit.ComparisonFailure: expected:&lt;Password [should be 8 digits and contains : a–z, A–Z, 1–9, Symbol]!&gt; but was:&lt;Password [cannot be empty]!&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
-	at ?.User see error message &quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:121)
-
-org.junit.ComparisonFailure: expected:&lt;[Wrong Phone Number format! All Numbers and 9 – 12 digits]!&gt; but was:&lt;[Phone Number cannot be empty]!&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
-	at ?.User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:175)
-
-org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-8ROAKM94', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\DANA\Debrief 2\APP\DANAB..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\DANA\Debrief 2\APP\DANAB..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c5a08757-1ea6-4a85-9467-42ba4e1e8c14
-*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text, 'Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at project.pages.LoginPage.getWarningTextPassword(LoginPage.java:47)
-	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessageOnPhoneNumberField(LoginStepDefinition.java:106)
-	at ?.User see error message &quot;Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!&quot; on password field(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:205)
+70 Scenarios (?[32m70 passed?[0m)
+278 Steps (?[32m278 passed?[0m)
+17m8.973s
 
 
 </pre>
@@ -518,10 +375,10 @@ Session ID: c5a08757-1ea6-4a85-9467-42ba4e1e8c14
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Jun 24, 2020 12:27:59 PM io.cucumber.core.options.CucumberPropertiesParser parse
+<pre>Jun 24, 2020 1:59:02 PM io.cucumber.core.options.CucumberPropertiesParser parse
 WARNING: Passing commandline options via the property `cucumber.options` has been deprecatedin favour of explicitly using property names.
 Please use these instead: [cucumber.ansi-colors.disabled, cucumber.execution.dry-run, cucumber.execution.limit, cucumber.execution.order, cucumber.execution.strict, cucumber.execution.wip, cucumber.features, cucumber.filter.name, cucumber.filter.tags, cucumber.glue, cucumber.object-factory, cucumber.plugin, cucumber.snippet-type]
-Jun 24, 2020 12:27:59 PM io.cucumber.junit.Cucumber &lt;init&gt;
+Jun 24, 2020 1:59:02 PM io.cucumber.junit.Cucumber &lt;init&gt;
 WARNING: By default Cucumber is running in --non-strict mode.
 This default will change to --strict and --non-strict will be removed.
 You can use --strict or @CucumberOptions(strict = true) to suppress this warning
@@ -536,7 +393,7 @@ You can use --strict or @CucumberOptions(strict = true) to suppress this warning
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at Jun 24, 2020 12:45:47 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Jun 24, 2020 2:16:12 PM</p>
 </div>
 </div>
 </body>

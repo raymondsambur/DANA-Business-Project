@@ -3,8 +3,8 @@
 
     Background:
       Given User is on Login Page
-      And User input phone number "8123456789" on phone number field
-      And User input password "Password@123" on password field
+      And User input phone number "81394577665" on phone number field
+      And User input password "P@ssw0rd" on password field
       And User click Sign In button on Login Page
       And User is on Home Page
       And User tap My Account button on Home page
@@ -37,22 +37,22 @@
     Scenario: Check if Phone Number shown is the same with user Phone Number
       Given User is on My Account page
       When User see Phone Number on My Account page
-      Then User validate Phone Number with registered Phone Number "8123456789"
+      Then User validate Phone Number with registered Phone Number "81394577665"
 
     @VerifyUserName
     Scenario: Check if Name shown is the same with user Name
       Given User is on My Account page
       When User see Name on My Account page
-      Then User validate Name with registered Name "Name"
+      Then User validate Name with registered Name "Dananjoyo Helyudanto"
 
     @VerifyEmail
     Scenario: Check if Email shown is the same with user Email
       Given User is on My Account page
       When User see Email on My Account page
-      Then User validate Email with registered Email "email@mail.com"
+      Then User validate Email with registered Email "dananjoyoh@gmail.com"
 
     @VerifyBalance
     Scenario: Check if Balance shown is the same with user Balance
       Given User is on My Account page
       When User see Balance on My Account page
-      Then User validate Balance with user current Balance "0000000"
+      Then User validate Balance with user current Balance "23.000"

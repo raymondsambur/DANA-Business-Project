@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6m22.15s</div>
+<div class="counter">2m52.58s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">94%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,16 +61,46 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
 </li>
 <li>
-<a href="#tab2">Standard error</a>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;"></a>
+<h3 class="failures">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: expected:&lt;[Wrong Phone Number format! All Numbers and 9 – 12 digits]!&gt; but was:&lt;[Phone Number cannot be empty]!&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
+	at ✽.User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:175)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="classMethod"></a>
+<h3 class="failures">classMethod</h3>
+<span class="code">
+<pre>org.junit.ComparisonFailure: expected:&lt;[Wrong Phone Number format! All Numbers and 9 – 12 digits]!&gt; but was:&lt;[Phone Number cannot be empty]!&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at project.stepsdefinition.LoginStepDefinition.userSeeErrorMessage(LoginStepDefinition.java:47)
+	at ✽.User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;(file:///D:/DANA/Debrief%202/src/test/resources/features/Login.feature:175)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -82,239 +112,239 @@
 </thead>
 <tr>
 <td class="success">User input phone number &quot;!@#$%^&amp;*(&quot; on phone number field</td>
-<td class="success">12.796s</td>
+<td class="success">0.135s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;08130000000&quot; on phone number field</td>
-<td class="success">4.985s</td>
+<td class="success">0.683s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;62813000000&quot; on phone number field</td>
-<td class="success">12.720s</td>
+<td class="success">0.680s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;81300000!&quot; on phone number field</td>
-<td class="success">12.907s</td>
+<td class="success">0.134s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;81300000&quot; on phone number field</td>
-<td class="success">5.955s</td>
+<td class="success">0.688s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;8130000000000&quot; on phone number field</td>
-<td class="success">22.815s</td>
+<td class="success">0.681s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;813abcd00&quot; on phone number field</td>
-<td class="success">22.835s</td>
+<td class="success">0.689s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;abcdefghi&quot; on phone number field</td>
-<td class="success">3.426s</td>
+<td class="success">0.127s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User input phone number &quot;??&quot; on phone number field</td>
-<td class="success">12.791s</td>
+<td class="success">0.111s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">1.033s</td>
+<td class="success">3.771s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">1.021s</td>
+<td class="success">3.669s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">0.991s</td>
+<td class="success">3.721s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">1.066s</td>
+<td class="success">3.712s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">0.995s</td>
+<td class="success">3.666s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">0.989s</td>
+<td class="success">3.678s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">0.960s</td>
+<td class="success">3.789s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">0.871s</td>
+<td class="success">3.653s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">User is on Login Page</td>
-<td class="success">1.029s</td>
+<td class="success">3.740s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.664s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.687s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.702s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.677s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.630s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.688s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.652s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.670s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.693s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.678s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.667s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.710s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.638s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.677s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.661s</td>
-<td class="success">passed</td>
+<td class="failures">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="failures">0.679s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">User see error message &quot;Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!&quot;</td>
-<td class="success">0.742s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">classMethod</td>
-<td class="success">51.396s</td>
+<td class="success">User see error message &quot;Wrong Phone Number format! All Numbers and 9 – 12 digits!&quot;</td>
+<td class="success">0.679s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">classMethod</td>
-<td class="success">31.396s</td>
+<td class="success">14.681s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">classMethod</td>
-<td class="success">15.932s</td>
+<td class="success">13.961s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">classMethod</td>
-<td class="success">31.235s</td>
+<td class="success">14.335s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">classMethod</td>
-<td class="success">14.948s</td>
+<td class="success">14.577s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">classMethod</td>
-<td class="success">27.770s</td>
+<td class="success">14.552s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">classMethod</td>
-<td class="success">23.089s</td>
+<td class="success">13.983s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">classMethod</td>
-<td class="success">27.808s</td>
+<td class="success">14.151s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="failures">classMethod</td>
+<td class="failures">14.308s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
 <td class="success">classMethod</td>
-<td class="success">32.339s</td>
+<td class="success">14.556s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:179?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:179?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:180?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:180?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:181?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:181?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:182?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:182?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:183?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:183?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:184?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:184?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:185?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:185?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:186?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:186?[0m
 
 @Login @PhoneField
-Scenario Outline: User input invalid format phone number                                                           ?[90m# src/test/resources/features/Login.feature:187?[0m
+Scenario Outline: User input invalid format phone number                                  ?[90m# src/test/resources/features/Login.feature:187?[0m
 </pre>
 </span>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Jun 22, 2020 10:14:54 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+<pre>Jun 24, 2020 12:37:14 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:15:29 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:37:28 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:16:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:37:43 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:16:52 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:37:57 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:17:10 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:38:11 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:17:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:38:25 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:18:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:38:39 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:18:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:38:54 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-Jun 22, 2020 10:18:55 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Jun 24, 2020 12:39:08 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -327,7 +357,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at Jun 22, 2020 10:33:08 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Jun 24, 2020 12:45:47 PM</p>
 </div>
 </div>
 </body>

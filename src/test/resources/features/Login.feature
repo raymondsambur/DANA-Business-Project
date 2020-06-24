@@ -46,7 +46,7 @@ Feature: Login
     When User input phone number "81300000" on phone number field
     And User input password "P@ssw0rd" on password field
     And User cannot click Sign In button on Login Page
-    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
+    Then User see error message "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
 
   @Invalid
   Scenario: 7. user login with 13 digits phone number but correct password
@@ -54,7 +54,7 @@ Feature: Login
     When User input phone number "8130000000000" on phone number field
     And User input password "P@ssw0rd" on password field
     And User cannot click Sign In button on Login Page
-    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
+    Then User see error message "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
 
   @Invalid @Nyoba
   Scenario Outline: 8 - 12. user login with non-numerical phone number but correct password
@@ -66,11 +66,11 @@ Feature: Login
 
     Examples:
       | phone number | password | error message                                                                      |
-      | 813abcd00    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
-      | abcdefghi    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
-      | 81300000!    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
-      | !@#$%^&*(    | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
-      | 😭           | P@ssw0rd | Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits! |
+      | 813abcd00    | P@ssw0rd | Wrong Phone Number format! All Numbers and 9 – 12 digits! |
+      | abcdefghi    | P@ssw0rd | Wrong Phone Number format! All Numbers and 9 – 12 digits! |
+      | 81300000!    | P@ssw0rd | Wrong Phone Number format! All Numbers and 9 – 12 digits! |
+      | !@#$%^&*(    | P@ssw0rd | Wrong Phone Number format! All Numbers and 9 – 12 digits! |
+      | 😭           | P@ssw0rd | Wrong Phone Number format! All Numbers and 9 – 12 digits! |
 
   @Invalid
   Scenario: 13. user login with prefix 62 phone number but correct password
@@ -78,7 +78,7 @@ Feature: Login
     When User input phone number "62813000000" on phone number field
     And User input password "P@ssw0rd" on password field
     And User cannot click Sign In button on Login Page
-    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
+    Then User see error message "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
 
   @Invalid
   Scenario: 14. user login with prefix 0 phone number but correct password
@@ -86,7 +86,7 @@ Feature: Login
     When User input phone number "08130000000" on phone number field
     And User input password "P@ssw0rd" on password field
     And User cannot click Sign In button on Login Page
-    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
+    Then User see error message "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
 
   @Invalid
   Scenario: 15. user login with correct phone number but empty password
@@ -172,7 +172,7 @@ Feature: Login
   Scenario Outline: User input invalid format phone number
     Given User is on Login Page
     When User input phone number "<phone number>" on phone number field
-    Then User see error message "Wrong Phone Number format! Must starts with 8, contains numbers and 9 – 12 digits!"
+    Then User see error message "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
 
     Examples:
       | phone number  |

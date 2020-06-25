@@ -268,3 +268,5 @@ Feature: Register
     Given User is on DANA bussiness Register Page
     When User tap Back button on Register Page
     Then User is on Login Page
+
+#   @UITesting

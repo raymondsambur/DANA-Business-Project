@@ -10,7 +10,7 @@ public interface PayByQRLocator {
     By BUTTON_BACK = MobileBy.id("iv_back_arrow");
 
     // Text View
-    By TEXT_PRESS = MobileBy.id("tvQRPress");
+    By TEXT_SCAN_INFO = MobileBy.id("tv_scan_info");
 
     // Icon
     By ICON_GALLERY = MobileBy.id("iv_gallery");

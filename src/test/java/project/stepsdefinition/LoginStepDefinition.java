@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import project.pages.ForgotPasswordPage;
 import project.pages.HomePage;
 import project.pages.LoginPage;
 import project.pages.RegisterPage;
@@ -14,6 +15,7 @@ public class LoginStepDefinition {
     private LoginPage loginPage = new LoginPage();
     private HomePage homePage = new HomePage();
     private RegisterPage registerPage = new RegisterPage();
+    private ForgotPasswordPage forgotPasswordPage = new ForgotPasswordPage();
 
     @Given("User is on Login Page")
     public void userIsOnLoginPage() {
@@ -87,7 +89,12 @@ public class LoginStepDefinition {
 
     @Then("User directed to Forgot Password Page")
     public void userDirectedToForgotPasswordPage() {
-        ///////////
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        forgotPasswordPage.onForgotPasswordPage();
     }
 
     @When("User click Register button")
@@ -112,5 +119,13 @@ public class LoginStepDefinition {
     public void userSeePasswordIsMasked() {
         boolean status = loginPage.isPasswordMasked();
         Assert.assertTrue(status);
+    }
+
+    @Then("User see pop up message {string}")
+    public void userSeePopUpMessage(String expected) {
+        loginPage.checkPopUp();
+        String actual = loginPage.getPopUpMessage();
+
+        Assert.assertEquals(expected, actual);
     }
 }

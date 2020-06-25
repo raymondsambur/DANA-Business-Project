@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@1",  "@2",  "@Invalid",  "@Login",  "@Negative",  "@Nyoba",  "@PasswordField",  "@PhoneField",  "@Scenario",  "@Show",  "@Valid",  "@forpassbutton",  "@registerbutton", ] ,
+        labels:  [ "@Home",  "@ValidateAccountButton",  "@ValidateBalance",  "@ValidateNotificationButton",  "@ValidateQRScanButton",  "@ValidateTopUpButton",  "@ValidateTransactionButton",  "@ValidateTransferButton", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  50.00,  95.86,  94.60,  80.00,  100.00,  95.00,  100.00,  95.00,  78.57,  100.00,  100.00,  100.00, ] 
+                data:  [ 76.19,  100.00,  100.00,  66.67,  100.00,  0.00,  66.67,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  25.00,  2.07,  3.96,  20.00,  0.00,  5.00,  0.00,  2.50,  14.29,  0.00,  0.00,  0.00, ] 
+                data:  [ 9.52,  0.00,  0.00,  33.33,  0.00,  0.00,  33.33,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  25.00,  2.07,  1.44,  0.00,  0.00,  0.00,  0.00,  2.50,  7.14,  0.00,  0.00,  0.00, ] 
+                data:  [ 14.29,  0.00,  0.00,  0.00,  0.00,  100.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>root project 'DANA Business Project'</td>
         <td>0</td>
-      <td>22 Jun 2020, 22:33</td>
+      <td>25 Jun 2020, 13:49</td>
     </tr>
   </tbody>
 </table>
@@ -197,194 +197,75 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_2147485680.html">@1</a></td>
+        <td class="tagname"><a href="report-tag_2208844094.html">@Home</a></td>
 
-        <td      class="passed"    >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="14335000000">14.335</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_2147485681.html">@2</a></td>
-
-        <td      class="passed"    >2</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="37638000000">37.638</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_1347666326.html">@Invalid</a></td>
-
-        <td      class="passed"    >139</td>
-        <td      class="failed"    >3</td>
+        <td      class="passed"    >16</td>
+        <td      class="failed"    >2</td>
         <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">145</td>
+        <td class="total">21</td>
 
-        <td  class="passed"    >26</td>
+        <td  class="passed"    >4</td>
         <td  class="failed"    >3</td>
-        <td class="total">29</td>
+        <td class="total">7</td>
 
-        <td class="duration" data-value="481877000000">8:1.877</td>
+        <td class="duration" data-value="50117000000">50.117</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_4053346056.html">@Login</a></td>
+        <td class="tagname"><a href="report-tag_843680232.html">@ValidateAccountButton</a></td>
 
-        <td      class="passed"    >263</td>
-        <td      class="failed"    >11</td>
-        <td     class="skipped"   >4</td>
+        <td      class="passed"    >3</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">278</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
 
-        <td  class="passed"    >59</td>
-        <td  class="failed"    >11</td>
-        <td class="total">70</td>
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="1303643000000">21:43.643</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="4149000000">4.149</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_3420270740.html">@Negative</a></td>
+        <td class="tagname"><a href="report-tag_2740836485.html">@ValidateBalance</a></td>
 
-        <td      class="passed"    >4</td>
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="2202000000">2.202</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2552940562.html">@ValidateNotificationButton</a></td>
+
+        <td      class="passed"    >2</td>
         <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">5</td>
+        <td class="total">3</td>
 
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="80567000000">1:20.567</td>
+        <td class="duration" data-value="6354000000">6.354</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_4055498466.html">@Nyoba</a></td>
-
-        <td      class="passed"    >25</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">25</td>
-
-        <td  class="passed"    >5</td>
-        <td >0</td>
-        <td class="total">5</td>
-
-        <td class="duration" data-value="80278000000">1:20.278</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_1041692350.html">@PasswordField</a></td>
-
-        <td      class="passed"    >57</td>
-        <td      class="failed"    >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">60</td>
-
-        <td  class="passed"    >17</td>
-        <td  class="failed"    >3</td>
-        <td class="total">20</td>
-
-        <td class="duration" data-value="315032000000">5:15.032</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_3252827275.html">@PhoneField</a></td>
-
-        <td      class="passed"    >33</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">33</td>
-
-        <td  class="passed"    >11</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td class="duration" data-value="154441000000">2:34.441</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_1723570159.html">@Scenario</a></td>
-
-        <td      class="passed"    >76</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">80</td>
-
-        <td  class="passed"    >14</td>
-        <td  class="failed"    >2</td>
-        <td class="total">16</td>
-
-        <td class="duration" data-value="283086000000">4:43.086</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_2209165148.html">@Show</a></td>
-
-        <td      class="passed"    >11</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">14</td>
-
-        <td  class="passed"    >2</td>
-        <td  class="failed"    >2</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="82586000000">1:22.586</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_4062168987.html">@Valid</a></td>
-
-        <td      class="passed"    >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="17801000000">17.801</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_3440035787.html">@forpassbutton</a></td>
+        <td class="tagname"><a href="report-tag_1005876613.html">@ValidateQRScanButton</a></td>
 
         <td      class="passed"    >3</td>
         <td >0</td>
@@ -397,11 +278,45 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="13265000000">13.265</td>
+        <td class="duration" data-value="4747000000">4.747</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_4090896340.html">@registerbutton</a></td>
+        <td class="tagname"><a href="report-tag_289605323.html">@ValidateTopUpButton</a></td>
+
+        <td >0</td>
+        <td >0</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="2000000">0.002</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_699311321.html">@ValidateTransactionButton</a></td>
+
+        <td      class="passed"    >2</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="26859000000">26.859</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_588067346.html">@ValidateTransferButton</a></td>
 
         <td      class="passed"    >3</td>
         <td >0</td>
@@ -414,7 +329,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="14465000000">14.465</td>
+        <td class="duration" data-value="5804000000">5.804</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -422,30 +337,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>624</td>
-      <td>23</td>
-      <td>11</td>
+      <td>32</td>
+      <td>4</td>
+      <td>6</td>
       <td>0</td>
       <td>0</td>
-      <td>658</td>
+      <td>42</td>
 
-      <td>79</td>
-      <td>82</td>
-      <td>161</td>
+      <td>4</td>
+      <td>10</td>
+      <td>14</td>
 
-      <td class="duration">47:59.014</td>
-      <td>13</td>
+      <td class="duration">1:40.234</td>
+      <td>8</td>
     </tr>
     <tr>
       <td></td>
-      <td>94.83%</td>
-      <td>3.50%</td>
-      <td>1.67%</td>
+      <td>76.19%</td>
+      <td>9.52%</td>
+      <td>14.29%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>49.07%</td>
-      <td>50.93%</td>
+      <td>28.57%</td>
+      <td>71.43%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

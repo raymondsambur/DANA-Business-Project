@@ -3,8 +3,8 @@ Feature: TopUp
 
   Background:
     Given User is on Login Page
-    And User input phone number "8123456789" on phone number field
-    And User input password "Password@123" on password field
+    And User input phone number "811123123" on phone number field
+    And User input password "Pass@123" on password field
     And User click Sign In button on Login Page
     And User is on Home Page
     And User tap Top Up Button on Home Page
@@ -52,3 +52,15 @@ Feature: TopUp
     When  User input nominal " " on top up nominal text field on Top Up Page
     And  User tap Pay button on Top Up Page
     Then  User see error message "Amount Field Cannot be Empty!" on Top Up Page
+
+#  @BalanceLabel
+#  Scenario: User validate DANA Balance on Top Up Page
+#    Given User is on Top Up page
+#    When  User see DANA Balance on Top Up Page
+#    Then  User validate DANA Balance with current DANA Balance on Top Up Page
+
+  @BackButton
+  Scenario: User validate the functional of Back Button on Top Up Page
+    Given User is on Top Up page
+    When  User tap Back Button on Top Up Page
+    Then  User is on Home Page

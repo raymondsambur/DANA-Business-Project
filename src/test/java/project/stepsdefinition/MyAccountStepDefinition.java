@@ -1,12 +1,16 @@
 package project.stepsdefinition;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import project.pages.HomePage;
 import project.pages.MyAccountPage;
+import project.pages.TopUpPage;
 
 public class MyAccountStepDefinition {
     MyAccountPage myAccountPage = new MyAccountPage();
+    TopUpPage topUpPage = new TopUpPage();
 
     @When("User tap Balance button on My Account page")
     public void userTapBalanceButtonOnMyAccountPage() {
@@ -14,8 +18,7 @@ public class MyAccountStepDefinition {
     }
 
     @Then("User is on Top Up page")
-    public void userIsOnTopUpPage() {
-    }
+    public void userIsOnTopUpPage() { topUpPage.isOnTopUpPage(); }
 
     @When("User tap Back button on My Account page")
     public void userTapBackButtonOnMyAccountPage() {
@@ -65,5 +68,36 @@ public class MyAccountStepDefinition {
     public void userValidateBalanceWithUserCurrentBalance(String balance) {
         String actual = myAccountPage.checkBalance();
         Assert.assertEquals(balance, actual);
+    }
+
+    @And("User tap yes on pop up message")
+    public void userTapYesOnPopUpMessage() {
+        myAccountPage.tapLogoutYes();
+    }
+
+    @And("User tap no on pop up message")
+    public void userTapNoOnPopUpMessage() {
+        myAccountPage.tapLogoutNo();
+    }
+
+    @When("User tap setting button on My Account page")
+    public void userTapSettingButtonOnMyAccountPage() {
+        myAccountPage.tapSetting();
+    }
+
+    @Then("User see message {string} on My Account page")
+    public void userSeeMessageOnMyAccountPage(String message) {
+        String actual = myAccountPage.errorMessage();
+        Assert.assertEquals(message, actual);
+    }
+
+    @When("User tap Change Profile button on My Account page")
+    public void userTapChangeProfileButtonOnMyAccountPage() {
+        myAccountPage.tapChangeProfile();
+    }
+
+    @When("User tap Change PIN button on My Account page")
+    public void userTapChangePINButtonOnMyAccountPage() {
+        myAccountPage.tapChangePINSecurity();
     }
 }

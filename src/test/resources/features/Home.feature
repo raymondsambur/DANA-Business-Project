@@ -3,22 +3,22 @@ Feature: Home
 
   Background:
     Given User is on Login Page
-    And User input phone number "81394577665" on phone number field
-    And User input password "P@ssw0rd" on password field
+    And User input phone number "81266829795" on phone number field
+    And User input password "Pass@123" on password field
     And User click Sign In button on Login Page
 
   @ValidateBalance
   Scenario: Validate DANA Balance on Home Page
     Given User is on Home Page
     When  User see DANA Balance on Home Page
-    Then  User validate DANA Balance with current DANA Balance on Home Page
+    Then  User validate DANA Balance with current DANA Balance "1.505.000" on Home Page
 
 #  Scenario: Validate DANA Balance on Home Page after make a purchase
 #    Given User is on Home Page
 #    When  User see DANA Balance on Home Page
 #    Then  User validate DANA Balance with current DANA Balance on Home Page
 
-#  Scenario: Validate DANA Balance on Home Page
+#  Scenario: Validate DANA Balance on Home Page after top up
 #    Given User is on Home Page
 #    When  User see DANA Balance on Home Page
 #    Then  User validate DANA Balance with current DANA Balance on Home Page
@@ -45,7 +45,7 @@ Feature: Home
   Scenario: Validate the functional of Transfer Button on Home Page
     Given User is on Home Page
     When  User tap Transfer Button on Home Page
-    Then  User see message "This Feature is Coming Soon!"
+    Then  User see message "Coming soon!"
 
   @ValidateQRScanButton
   Scenario: Validate the functional of QR Scan Button on Home Page
@@ -53,7 +53,8 @@ Feature: Home
     When  User tap QR Scan Button on Home Page
     Then  User is on QR Scan page
 
-#  Scenario: Validate the functional of Notification Button on Home Page
-#    Given User is on Home Page
-#    When  User tap Notification Button on Home Page
-#    Then  User see message "This Feature is Coming Soon!"
+  @ValidateNotificationButton
+  Scenario: Validate the functional of Notification Button on Home Page
+    Given User is on Home Page
+    When  User tap Notification Button on Home Page
+    Then  User see message "Coming soon!"

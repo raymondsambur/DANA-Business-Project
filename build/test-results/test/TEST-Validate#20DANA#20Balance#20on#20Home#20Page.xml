@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validate DANA Balance on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T06:55:50" hostname="dnid0666l01.local" time="15.808">
+<testsuite name="Validate DANA Balance on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T08:19:08" hostname="dnid0666l01.local" time="9.247">
   <properties/>
-  <testcase name="User is on Login Page" classname="Validate DANA Balance on Home Page" time="9.513"/>
-  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate DANA Balance on Home Page" time="0.801"/>
-  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate DANA Balance on Home Page" time="1.361"/>
-  <testcase name="User click Sign In button on Login Page" classname="Validate DANA Balance on Home Page" time="0.707"/>
-  <testcase name="User is on Home Page" classname="Validate DANA Balance on Home Page" time="0.003"/>
-  <testcase name="User see DANA Balance on Home Page" classname="Validate DANA Balance on Home Page" time="2.737"/>
-  <testcase name="User validate DANA Balance with current DANA Balance &quot;1.505.000&quot; on Home Page" classname="Validate DANA Balance on Home Page" time="0.047"/>
-  <testcase name="classMethod" classname="Validate DANA Balance on Home Page" time="25.859"/>
+  <testcase name="User is on Login Page" classname="Validate DANA Balance on Home Page" time="3.916"/>
+  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate DANA Balance on Home Page" time="0.669"/>
+  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate DANA Balance on Home Page" time="1.362"/>
+  <testcase name="User click Sign In button on Login Page" classname="Validate DANA Balance on Home Page" time="0.687"/>
+  <testcase name="User is on Home Page" classname="Validate DANA Balance on Home Page" time="0.002"/>
+  <testcase name="User see DANA Balance on Home Page" classname="Validate DANA Balance on Home Page" time="2.094"/>
+  <testcase name="User validate DANA Balance with current DANA Balance &quot;1.505.000&quot; on Home Page" classname="Validate DANA Balance on Home Page" time="0.029"/>
+  <testcase name="classMethod" classname="Validate DANA Balance on Home Page" time="18.552"/>
   <system-out><![CDATA[
 @Home @ValidateBalance
 Scenario: Validate DANA Balance on Home Page                                         ?[90m# src/test/resources/features/Home.feature:11?[0m
 ]]></system-out>
-  <system-err><![CDATA[Jun 25, 2020 1:55:50 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[Jun 25, 2020 3:19:08 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

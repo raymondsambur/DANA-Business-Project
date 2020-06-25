@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validate the functional of QR Scan Button on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T06:58:33" hostname="dnid0666l01.local" time="15.811">
+<testsuite name="Validate the functional of QR Scan Button on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T08:21:34" hostname="dnid0666l01.local" time="15.552">
   <properties/>
-  <testcase name="User is on Login Page" classname="Validate the functional of QR Scan Button on Home Page" time="8.163"/>
-  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate the functional of QR Scan Button on Home Page" time="0.737"/>
-  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate the functional of QR Scan Button on Home Page" time="1.41"/>
-  <testcase name="User click Sign In button on Login Page" classname="Validate the functional of QR Scan Button on Home Page" time="0.738"/>
+  <testcase name="User is on Login Page" classname="Validate the functional of QR Scan Button on Home Page" time="7.489"/>
+  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate the functional of QR Scan Button on Home Page" time="0.699"/>
+  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate the functional of QR Scan Button on Home Page" time="1.399"/>
+  <testcase name="User click Sign In button on Login Page" classname="Validate the functional of QR Scan Button on Home Page" time="0.75"/>
   <testcase name="User is on Home Page" classname="Validate the functional of QR Scan Button on Home Page" time="0.001"/>
-  <testcase name="User tap QR Scan Button on Home Page" classname="Validate the functional of QR Scan Button on Home Page" time="2.048"/>
-  <testcase name="User is on QR Scan page" classname="Validate the functional of QR Scan Button on Home Page" time="1.95"/>
-  <testcase name="classMethod" classname="Validate the functional of QR Scan Button on Home Page" time="28.916"/>
+  <testcase name="User tap QR Scan Button on Home Page" classname="Validate the functional of QR Scan Button on Home Page" time="2.149"/>
+  <testcase name="User is on QR Scan page" classname="Validate the functional of QR Scan Button on Home Page" time="2.251"/>
+  <testcase name="classMethod" classname="Validate the functional of QR Scan Button on Home Page" time="33.153"/>
   <system-out><![CDATA[
 @Home @ValidateQRScanButton
 Scenario: Validate the functional of QR Scan Button on Home Page  ?[90m# src/test/resources/features/Home.feature:51?[0m
 ]]></system-out>
-  <system-err><![CDATA[Jun 25, 2020 1:58:32 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[Jun 25, 2020 3:21:34 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

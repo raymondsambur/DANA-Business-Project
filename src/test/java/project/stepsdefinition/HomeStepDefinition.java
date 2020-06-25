@@ -5,11 +5,13 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import project.pages.HomePage;
 import project.pages.PayByQRPage;
+import project.pages.TransactionHistoryPage;
 
 public class HomeStepDefinition {
 
     HomePage homePage = new HomePage();
     PayByQRPage payByQRPage = new PayByQRPage();
+    TransactionHistoryPage transactionHistoryPage = new TransactionHistoryPage();
 
     @When("User see DANA Balance on Home Page")
     public void userSeeDANABalanceOnHomePage() { homePage.viewBalance(); }
@@ -26,7 +28,7 @@ public class HomeStepDefinition {
     public void userTapTransactionButtonOnHomePage() { homePage.tapHistoryTransaction(); }
 
     @Then("User is on Transaction page")
-    public void userIsOnTransactionPage() { }
+    public void userIsOnTransactionPage() { transactionHistoryPage.isOnTransactionHistoryPage(); }
 
     @When("User tap Account Button on Home Page")
     public void userTapAccountButtonOnHomePage() { homePage.tapMyAccount(); }

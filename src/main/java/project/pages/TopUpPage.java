@@ -15,8 +15,22 @@ public class TopUpPage implements TopUpLocator {
         WebElement inputNominal = AndroidDriverInstance.androidDriver.findElement(TopUpLocator.INPUT_AMOUNT);
         inputNominal.sendKeys(nominal); }
 
-    public void tapPayButton() { androidDriver.findElement(BUTTON_PAY).click(); }
+    public String viewBalance() { return androidDriver.findElement(TEXT_BALANCE).getText(); }
+
+    public void tapTopUpButton() { androidDriver.findElement(BUTTON_TOP_UP).click(); }
     public void tapBackButton() { androidDriver.findElement(BUTTON_BACK).click(); }
 
     public String errorMessage() { return androidDriver.findElement(TEXT_ERROR_MESSAGE).getText(); }
+
+    //Payment Method
+    public boolean onPaymentMethod() { return PageFunctions.waitABit(TEXT_PAYMENT_METHOD).isDisplayed(); }
+    public void tapCloseButton() { androidDriver.findElement(BUTTON_CLOSE).click(); }
+    public void tapChangeButton() { androidDriver.findElement(BUTTON_CHANGE).click(); }
+    public void tapPayButton() { androidDriver.findElement(BUTTON_PAY).click(); }
+    public void tapAlfamart() { androidDriver.findElement(BUTTON_ALFAMART).click(); }
+    public void tapBankTransfer() { androidDriver.findElement(BUTTON_BANK_TRANSFER).click(); }
+    public void tapBRIDebitCard() { androidDriver.findElement(BUTTON_DEBIT_CARD).click(); }
+    public String amountTopUp() { return androidDriver.findElement(TOP_UP_AMOUNT).getText(); }
+    public boolean allPaymentMethod() { return PageFunctions.waitABit(BUTTON_ALFAMART).isDisplayed(); }
+
 }

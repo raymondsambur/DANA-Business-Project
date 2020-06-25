@@ -6,20 +6,17 @@ import org.openqa.selenium.By;
 public interface TopUpResultLocator {
 
     // Text View
-    By TEXT_TOP_UP_TITLE = MobileBy.id("tvTopUpTitle");
-    By TEXT_ERROR_MESSAGE = MobileBy.id("tvErrorMessage");
-
-    // Edit Text
-    By INPUT_AMOUNT = MobileBy.id("etTopUpAmount");
+    By TEXT_RESULT = MobileBy.id("tv_result_status");
+    By TEXT_RESULT_MESSAGE = MobileBy.id("tv_result_msg");
+    By TEXT_INFO_MESSAGE = MobileBy.id("tv_result_info");
 
     // Image View
-    By IMAGE_TOP_UP_LOGO = MobileBy.id("ivTopUpLogoTopUp");
-
-    // Icon
-    By ICON_NOMINAL = MobileBy.id("icTopUpNominal");
+    By IMAGE_RESULT = MobileBy.id("iv_result");
 
     // Button
-    By BUTTON_PAY = MobileBy.id("btnTopUpPay");
-    By BUTTON_BACK = MobileBy.id("btnTOpUpBack");
+    By BUTTON_BACK = MobileBy.id("btn_result");
+
+    //Error Message
+    By ERROR_MESSAGE = MobileBy.xpath("/hierarchy/android.widget.Toast");
 
 }

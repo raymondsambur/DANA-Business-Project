@@ -50,9 +50,4 @@ public class HomeStepDefinition {
     @When("User tap Notification Button on Home Page")
     public void userTapNotificationButtonOnHomePage() { homePage.tapNotification();}
 
-    @When("User tap allow to take picture and record video on Pop Up Message")
-    public void userTapAllowToTakePictureAndRecordVideoOnPopUpMessage() { homePage.tapAllowCamera();}
-
-    @When("User tap allow to take access photo, media, and file on Pop Up Message")
-    public void userTapAllowToTakeAccessPhotoMediaAndFileOnPopUpMessage() { homePage.tapAllowFiles();}
 }

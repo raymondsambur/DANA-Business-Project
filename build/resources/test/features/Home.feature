@@ -51,8 +51,6 @@ Feature: Home
   Scenario: Validate the functional of QR Scan Button on Home Page
     Given User is on Home Page
     When  User tap QR Scan Button on Home Page
-    When  User tap allow to take picture and record video on Pop Up Message
-    When  User tap allow to take access photo, media, and file on Pop Up Message
     Then  User is on QR Scan page
 
   @ValidateNotificationButton

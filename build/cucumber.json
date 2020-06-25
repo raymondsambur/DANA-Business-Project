@@ -1,0 +1,168 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10561000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Login Page",
+            "match": {
+              "location": "project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 688000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User input phone number \"81266829795\" on phone number field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"81266829795\"",
+                  "offset": 24
+                }
+              ],
+              "location": "project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1347000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User input password \"Pass@123\" on password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pass@123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 712000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click Sign In button on Login Page",
+            "match": {
+              "location": "project.stepsdefinition.LoginStepDefinition.userClickSignInButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T06:17:42.474Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17319000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.hooks.AndroidDriverHooks.initializeWebdriver()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Validate the functional of QR Scan Button on Home Page",
+        "description": "",
+        "id": "home;validate-the-functional-of-qr-scan-button-on-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 718000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.hooks.AndroidDriverHooks.quitWebdriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "project.stepsdefinition.ChangePasswordStepDefinition.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2602000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User tap QR Scan Button on Home Page",
+            "match": {
+              "location": "project.stepsdefinition.HomeStepDefinition.userTapQRScanButtonOnHomePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1877000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User is on QR Scan page",
+            "match": {
+              "location": "project.stepsdefinition.HomeStepDefinition.userIsOnQRScanPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Home"
+          },
+          {
+            "name": "@ValidateQRScanButton"
+          }
+        ]
+      }
+    ],
+    "name": "Home",
+    "description": "",
+    "id": "home",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Home.feature",
+    "tags": [
+      {
+        "name": "@Home",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

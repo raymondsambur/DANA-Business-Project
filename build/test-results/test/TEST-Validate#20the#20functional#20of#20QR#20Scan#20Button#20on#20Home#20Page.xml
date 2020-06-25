@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Validate the functional of QR Scan Button on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T06:17:59" hostname="dnid0666l01.local" time="18.514">
+  <properties/>
+  <testcase name="User is on Login Page" classname="Validate the functional of QR Scan Button on Home Page" time="10.562"/>
+  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate the functional of QR Scan Button on Home Page" time="0.688"/>
+  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate the functional of QR Scan Button on Home Page" time="1.347"/>
+  <testcase name="User click Sign In button on Login Page" classname="Validate the functional of QR Scan Button on Home Page" time="0.712"/>
+  <testcase name="User is on Home Page" classname="Validate the functional of QR Scan Button on Home Page" time="0.001"/>
+  <testcase name="User tap QR Scan Button on Home Page" classname="Validate the functional of QR Scan Button on Home Page" time="2.602"/>
+  <testcase name="User is on QR Scan page" classname="Validate the functional of QR Scan Button on Home Page" time="1.878"/>
+  <testcase name="classMethod" classname="Validate the functional of QR Scan Button on Home Page" time="36.02"/>
+  <system-out><![CDATA[
+@Home @ValidateQRScanButton
+Scenario: Validate the functional of QR Scan Button on Home Page  ?[90m# src/test/resources/features/Home.feature:51?[0m
+]]></system-out>
+  <system-err><![CDATA[Jun 25, 2020 1:17:59 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

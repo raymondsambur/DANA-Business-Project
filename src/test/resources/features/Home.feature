@@ -13,16 +13,6 @@ Feature: Home
     When  User see DANA Balance on Home Page
     Then  User validate DANA Balance with current DANA Balance "1.505.000" on Home Page
 
-#  Scenario: Validate DANA Balance on Home Page after make a purchase
-#    Given User is on Home Page
-#    When  User see DANA Balance on Home Page
-#    Then  User validate DANA Balance with current DANA Balance on Home Page
-
-#  Scenario: Validate DANA Balance on Home Page after top up
-#    Given User is on Home Page
-#    When  User see DANA Balance on Home Page
-#    Then  User validate DANA Balance with current DANA Balance on Home Page
-
   @ValidateTopUpButton
   Scenario: Validate the functional of Top Up Button on Home Page
     Given User is on Home Page

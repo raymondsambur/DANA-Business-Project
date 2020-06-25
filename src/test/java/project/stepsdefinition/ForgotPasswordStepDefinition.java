@@ -13,8 +13,12 @@ public class ForgotPasswordStepDefinition {
 
     @Given("User is on forgot password page")
     public void userIsOnForgotPasswordPage() {
-        forgotPasswordPage.onForgotPasswordPage();
-    }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        forgotPasswordPage.onForgotPasswordPage();    }
 
     @When("User input email {string} on Email Field")
     public void userInputEmailOnEmailField(String email) {

@@ -11,7 +11,7 @@ public interface ForgotPasswordLocator {
     By TEXT_POP_MESSAGE = MobileBy.id("snackbar_text");
 
     // Edit Text
-    By INPUT_EMAIL = MobileBy.id("textinput_placeholder");
+    By INPUT_EMAIL = MobileBy.id("et_email_forgot");
 
     // Button
     By BUTTON_SEND = MobileBy.id("bt_send_forgot");

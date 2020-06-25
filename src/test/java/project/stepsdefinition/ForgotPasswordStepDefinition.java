@@ -27,8 +27,7 @@ public class ForgotPasswordStepDefinition {
 
     @Then("There's no error message")
     public void thereSNoErrorMessage() {
-        boolean statusField = forgotPasswordPage.checkErrorMessageField();
-        Assert.assertFalse(statusField);
+       
     }
 
     @And("User click send button")

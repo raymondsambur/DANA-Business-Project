@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public interface ForgotPasswordLocator {
 
     // Text View
-    By TEXT_FORGOT_PASSWORD_TITLE = MobileBy.id("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView\n");
+    By TEXT_FORGOT_PASSWORD_TITLE = MobileBy.xpath("//android.widget.TextView[@text = 'Forgot Password']");
     By TEXT_ERROR_MESSAGE = MobileBy.id("textinput_error");
     By TEXT_POP_MESSAGE = MobileBy.id("snackbar_text");
 

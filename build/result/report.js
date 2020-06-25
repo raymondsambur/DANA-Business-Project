@@ -58,7 +58,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Validate the functional of QR Scan Button on Home Page",
+  "name": "Validate the functional of Transfer Button on Home Page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -66,7 +66,7 @@ formatter.scenario({
       "name": "@Home"
     },
     {
-      "name": "@ValidateQRScanButton"
+      "name": "@ValidateTransferButton"
     }
   ]
 });
@@ -81,21 +81,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User tap QR Scan Button on Home Page",
+  "name": "User tap Transfer Button on Home Page",
   "keyword": "When "
 });
 formatter.match({
-  "location": "project.stepsdefinition.HomeStepDefinition.userTapQRScanButtonOnHomePage()"
+  "location": "project.stepsdefinition.HomeStepDefinition.userTapTransferButtonOnHomePage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User is on QR Scan page",
+  "name": "User see message \"Coming soon!\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "project.stepsdefinition.HomeStepDefinition.userIsOnQRScanPage()"
+  "location": "project.stepsdefinition.HomeStepDefinition.userSeeMessage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

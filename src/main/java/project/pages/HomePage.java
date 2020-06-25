@@ -14,8 +14,6 @@ public class HomePage implements HomeLocator {
     public void tapScanToPay() { androidDriver.findElement(BUTTON_SCAN_TO_PAY).click(); }
     public void tapTransfer() { androidDriver.findElement(BUTTON_TRANSFER).click(); }
     public void tapNotification() { androidDriver.findElement(BUTTON_NOTIFICATION).click(); }
-    public void tapAllowCamera() { androidDriver.findElement(BUTTON_ALLOW_CAMERA).click(); }
-    public void tapAllowFiles() { androidDriver.findElement(BUTTON_ALLOW_FILES).click(); }
 
     public String viewBalance() { return androidDriver.findElement(TEXT_BALANCE).getText(); }
     public String viewMessage() { return androidDriver.findElement(TOAST_MESSAGE).getText(); }

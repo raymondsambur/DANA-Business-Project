@@ -45,7 +45,7 @@ Feature: Home
   Scenario: Validate the functional of Transfer Button on Home Page
     Given User is on Home Page
     When  User tap Transfer Button on Home Page
-    Then  User see message "Coming Soon!"
+    Then  User see message "Coming soon!"
 
   @ValidateQRScanButton
   Scenario: Validate the functional of QR Scan Button on Home Page
@@ -57,4 +57,4 @@ Feature: Home
   Scenario: Validate the functional of Notification Button on Home Page
     Given User is on Home Page
     When  User tap Notification Button on Home Page
-    Then  User see message "Coming Soon!"
+    Then  User see message "Coming soon!"

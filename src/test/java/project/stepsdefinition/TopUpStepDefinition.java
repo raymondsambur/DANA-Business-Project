@@ -4,9 +4,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import project.pages.TopUpPage;
+import project.pages.TopUpResultPage;
 
 public class TopUpStepDefinition {
     TopUpPage topUpPage = new TopUpPage();
+    TopUpResultPage topUpResultPage = new TopUpResultPage();
 
     @When("User input nominal {string} on top up nominal text field on Top Up Page")
     public void userInputNominalOnTopUpNominalTextFieldOnTopUpPage(String nominal) { topUpPage.inputNominal(nominal); }

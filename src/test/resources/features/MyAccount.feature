@@ -13,7 +13,7 @@ Feature: My Account
   Scenario: Go to Change Password page by tapping Change Password button
     Given User is on My Account page
     When User tap Change Password button on My Account page
-    Then User is on Change Password page
+    Then User see message "Coming soon!" on My Account page
 
   @VerifyBalanceButtonFunction
   Scenario: Go to Top Up page by tapping Balance button

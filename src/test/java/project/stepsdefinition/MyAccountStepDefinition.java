@@ -4,10 +4,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import project.pages.HomePage;
 import project.pages.MyAccountPage;
+import project.pages.TopUpPage;
 
 public class MyAccountStepDefinition {
     MyAccountPage myAccountPage = new MyAccountPage();
+    TopUpPage topUpPage = new TopUpPage();
 
     @When("User tap Balance button on My Account page")
     public void userTapBalanceButtonOnMyAccountPage() {
@@ -15,8 +18,7 @@ public class MyAccountStepDefinition {
     }
 
     @Then("User is on Top Up page")
-    public void userIsOnTopUpPage() {
-    }
+    public void userIsOnTopUpPage() { topUpPage.isOnTopUpPage(); }
 
     @When("User tap Back button on My Account page")
     public void userTapBackButtonOnMyAccountPage() {

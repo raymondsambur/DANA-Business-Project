@@ -8,63 +8,13 @@
   ?[32mGiven ?[0m?[32mUser is on Home Page?[0m                                                         ?[90m# project.stepsdefinition.ChangePasswordStepDefinition.userIsOnHomePage()?[0m
   ?[32mWhen ?[0m?[32mUser see DANA Balance on Home Page?[0m                                            ?[90m# project.stepsdefinition.HomeStepDefinition.userSeeDANABalanceOnHomePage()?[0m
   ?[32mThen ?[0m?[32mUser validate DANA Balance with current DANA Balance ?[0m?[32m?[1m"1.505.000"?[0m?[32m on Home Page?[0m ?[90m# project.stepsdefinition.HomeStepDefinition.userValidateDANABalanceWithCurrentDANABalanceOnHomePage(java.lang.String)?[0m
-  ?[31mGiven ?[0m?[31mUser is on Login Page?[0m                                     ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
-      ?[31morg.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'dnid0666l01.local', ip: 'fe80:0:0:0:142e:6ce4:190e:1ab3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/chenr/IdeaProjects/D..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/chenr/IdeaProjects/D..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 23, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1777dca0-1547-429e-ba3f-99433380c9c8
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at project.pages.LoginPage.isOnLoginPage(LoginPage.java:15)
-	at project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage(LoginStepDefinition.java:22)
-	at ✽.User is on Login Page(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:5)
-?[0m
-  ?[36mAnd ?[0m?[36mUser input phone number ?[0m?[36m?[1m"81266829795"?[0m?[36m on phone number field?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
-  ?[36mAnd ?[0m?[36mUser input password ?[0m?[36m?[1m"Pass@123"?[0m?[36m on password field?[0m            ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
-  ?[36mAnd ?[0m?[36mUser click Sign In button on Login Page?[0m                     ?[90m# project.stepsdefinition.LoginStepDefinition.userClickSignInButton()?[0m
-  ?[36mGiven ?[0m?[36mUser is on Home Page?[0m                                      ?[90m# project.stepsdefinition.ChangePasswordStepDefinition.userIsOnHomePage()?[0m
-  ?[36mWhen ?[0m?[36mUser tap Top Up Button on Home Page?[0m                        ?[90m# project.stepsdefinition.HomeStepDefinition.userTapTopUpButtonOnHomePage()?[0m
-  ?[36mThen ?[0m?[36mUser is on Top Up page?[0m                                     ?[90m# project.stepsdefinition.MyAccountStepDefinition.userIsOnTopUpPage()?[0m
-      ?[31morg.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'dnid0666l01.local', ip: 'fe80:0:0:0:142e:6ce4:190e:1ab3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/chenr/IdeaProjects/D..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/chenr/IdeaProjects/D..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 23, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1777dca0-1547-429e-ba3f-99433380c9c8
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at project.hooks.AndroidDriverHooks.quitWebdriver(AndroidDriverHooks.java:20)
-?[0m
+  ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                     ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
+  ?[32mAnd ?[0m?[32mUser input phone number ?[0m?[32m?[1m"81266829795"?[0m?[32m on phone number field?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m"Pass@123"?[0m?[32m on password field?[0m            ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser click Sign In button on Login Page?[0m                     ?[90m# project.stepsdefinition.LoginStepDefinition.userClickSignInButton()?[0m
+  ?[32mGiven ?[0m?[32mUser is on Home Page?[0m                                      ?[90m# project.stepsdefinition.ChangePasswordStepDefinition.userIsOnHomePage()?[0m
+  ?[32mWhen ?[0m?[32mUser tap Top Up Button on Home Page?[0m                        ?[90m# project.stepsdefinition.HomeStepDefinition.userTapTopUpButtonOnHomePage()?[0m
+  ?[32mThen ?[0m?[32mUser is on Top Up page?[0m                                     ?[90m# project.stepsdefinition.MyAccountStepDefinition.userIsOnTopUpPage()?[0m
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                        ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mAnd ?[0m?[32mUser input phone number ?[0m?[32m?[1m"81266829795"?[0m?[32m on phone number field?[0m    ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
   ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m"Pass@123"?[0m?[32m on password field?[0m               ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
@@ -85,7 +35,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'dnid0666l01.local', ip: 'fe80:0:0:0:142e:6ce4:190e:1ab3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/chenr/IdeaProjects/D..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/chenr/IdeaProjects/D..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 23, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 265654c4-247f-48ed-a114-3010c68821d7
+Session ID: 301cb2f8-eeab-447c-a32f-7caedbfa0486
 *** Element info: {Using=id, value=tvTransactionhistoryTitle}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -183,7 +133,7 @@ Session ID: 265654c4-247f-48ed-a114-3010c68821d7
 	at java.lang.Thread.run(Thread.java:748)
 ?[0m
 
-    Embedding null [image/png 108403 bytes]
+    Embedding null [image/png 108642 bytes]
 
 
     scenario Fail
@@ -201,7 +151,19 @@ Session ID: 265654c4-247f-48ed-a114-3010c68821d7
   ?[32mAnd ?[0m?[32mUser click Sign In button on Login Page?[0m                     ?[90m# project.stepsdefinition.LoginStepDefinition.userClickSignInButton()?[0m
   ?[32mGiven ?[0m?[32mUser is on Home Page?[0m                                      ?[90m# project.stepsdefinition.ChangePasswordStepDefinition.userIsOnHomePage()?[0m
   ?[32mWhen ?[0m?[32mUser tap Transfer Button on Home Page?[0m                      ?[90m# project.stepsdefinition.HomeStepDefinition.userTapTransferButtonOnHomePage()?[0m
-  ?[32mThen ?[0m?[32mUser see message ?[0m?[32m?[1m"Coming soon!"?[0m                            ?[90m# project.stepsdefinition.HomeStepDefinition.userSeeMessage(java.lang.String)?[0m
+  ?[31mThen ?[0m?[31mUser see message ?[0m?[31m?[1m"Coming soon!"?[0m                            ?[90m# project.stepsdefinition.HomeStepDefinition.userSeeMessage(java.lang.String)?[0m
+      ?[31morg.junit.ComparisonFailure: expected:<[Coming soon!]> but was:<[Login success]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at project.stepsdefinition.HomeStepDefinition.userSeeMessage(HomeStepDefinition.java:43)
+	at ✽.User see message "Coming soon!"(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:48)
+?[0m
+
+    Embedding null [image/png 109099 bytes]
+
+
+    scenario Fail
+
   ?[32mGiven ?[0m?[32mUser is on Login Page?[0m                                     ?[90m# project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage()?[0m
   ?[32mAnd ?[0m?[32mUser input phone number ?[0m?[32m?[1m"81266829795"?[0m?[32m on phone number field?[0m ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPhoneNumberOnPhoneNumberField(java.lang.String)?[0m
   ?[32mAnd ?[0m?[32mUser input password ?[0m?[32m?[1m"Pass@123"?[0m?[32m on password field?[0m            ?[90m# project.stepsdefinition.LoginStepDefinition.userInputPasswordOnPasswordField(java.lang.String)?[0m
@@ -223,71 +185,21 @@ Session ID: 265654c4-247f-48ed-a114-3010c68821d7
 	at ✽.User see message "Coming soon!"(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:60)
 ?[0m
 
-    Embedding null [image/png 108769 bytes]
+    Embedding null [image/png 108988 bytes]
 
 
     scenario Fail
 
 
 ?[31mFailed scenarios:?[0m
-?[31mfile:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:27?[0m# Validate the functional of Top Up Button on Home Page
 ?[31mfile:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:33?[0m# Validate the functional of Transaction Button on Home Page
+?[31mfile:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:45?[0m# Validate the functional of Transfer Button on Home Page
 ?[31mfile:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:57?[0m# Validate the functional of Notification Button on Home Page
 
 7 Scenarios (?[31m3 failed?[0m, ?[32m4 passed?[0m)
-49 Steps (?[31m3 failed?[0m, ?[36m6 skipped?[0m, ?[32m40 passed?[0m)
-3m39.336s
+49 Steps (?[31m3 failed?[0m, ?[32m46 passed?[0m)
+3m35.117s
 
-
-org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'dnid0666l01.local', ip: 'fe80:0:0:0:142e:6ce4:190e:1ab3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/chenr/IdeaProjects/D..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/chenr/IdeaProjects/D..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 23, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1777dca0-1547-429e-ba3f-99433380c9c8
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at project.pages.LoginPage.isOnLoginPage(LoginPage.java:15)
-	at project.stepsdefinition.LoginStepDefinition.userIsOnLoginPage(LoginStepDefinition.java:22)
-	at ✽.User is on Login Page(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:5)
-
-org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'dnid0666l01.local', ip: 'fe80:0:0:0:142e:6ce4:190e:1ab3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/chenr/IdeaProjects/D..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/chenr/IdeaProjects/D..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 23, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1777dca0-1547-429e-ba3f-99433380c9c8
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at project.hooks.AndroidDriverHooks.quitWebdriver(AndroidDriverHooks.java:20)
 
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: tvTransactionhistoryTitle (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
@@ -302,7 +214,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'dnid0666l01.local', ip: 'fe80:0:0:0:142e:6ce4:190e:1ab3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/chenr/IdeaProjects/D..., appPackage: com.alfikri.rizky.danabusin..., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/chenr/IdeaProjects/D..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: device, platformName: android, platformVersion: 6.0, udid: emulator-5554}, deviceApiLevel: 23, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 265654c4-247f-48ed-a114-3010c68821d7
+Session ID: 301cb2f8-eeab-447c-a32f-7caedbfa0486
 *** Element info: {Using=id, value=tvTransactionhistoryTitle}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -403,14 +315,20 @@ org.junit.ComparisonFailure: expected:<[Coming soon!]> but was:<[Login success]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at project.stepsdefinition.HomeStepDefinition.userSeeMessage(HomeStepDefinition.java:43)
+	at ✽.User see message "Coming soon!"(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:48)
+
+org.junit.ComparisonFailure: expected:<[Coming soon!]> but was:<[Login success]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at project.stepsdefinition.HomeStepDefinition.userSeeMessage(HomeStepDefinition.java:43)
 	at ✽.User see message "Coming soon!"(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:60)
 
 
 ]]></system-out>
-  <system-err><![CDATA[Jun 25, 2020 1:45:52 PM io.cucumber.core.options.CucumberPropertiesParser parse
+  <system-err><![CDATA[Jun 25, 2020 1:55:40 PM io.cucumber.core.options.CucumberPropertiesParser parse
 WARNING: Passing commandline options via the property `cucumber.options` has been deprecatedin favour of explicitly using property names.
 Please use these instead: [cucumber.ansi-colors.disabled, cucumber.execution.dry-run, cucumber.execution.limit, cucumber.execution.order, cucumber.execution.strict, cucumber.execution.wip, cucumber.features, cucumber.filter.name, cucumber.filter.tags, cucumber.glue, cucumber.object-factory, cucumber.plugin, cucumber.snippet-type]
-Jun 25, 2020 1:45:52 PM io.cucumber.junit.Cucumber <init>
+Jun 25, 2020 1:55:40 PM io.cucumber.junit.Cucumber <init>
 WARNING: By default Cucumber is running in --non-strict mode.
 This default will change to --strict and --non-strict will be removed.
 You can use --strict or @CucumberOptions(strict = true) to suppress this warning

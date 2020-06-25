@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validate the functional of Transfer Button on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T06:48:18" hostname="dnid0666l01.local" time="13.554">
+<testsuite name="Validate the functional of Transfer Button on Home Page" tests="8" skipped="0" failures="2" errors="0" timestamp="2020-06-25T06:58:01" hostname="dnid0666l01.local" time="18.359">
   <properties/>
-  <testcase name="User is on Login Page" classname="Validate the functional of Transfer Button on Home Page" time="4.461"/>
-  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate the functional of Transfer Button on Home Page" time="0.66"/>
-  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate the functional of Transfer Button on Home Page" time="1.38"/>
-  <testcase name="User click Sign In button on Login Page" classname="Validate the functional of Transfer Button on Home Page" time="0.74"/>
+  <testcase name="User is on Login Page" classname="Validate the functional of Transfer Button on Home Page" time="9.007"/>
+  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate the functional of Transfer Button on Home Page" time="0.746"/>
+  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate the functional of Transfer Button on Home Page" time="1.362"/>
+  <testcase name="User click Sign In button on Login Page" classname="Validate the functional of Transfer Button on Home Page" time="0.738"/>
   <testcase name="User is on Home Page" classname="Validate the functional of Transfer Button on Home Page" time="0.001"/>
-  <testcase name="User tap Transfer Button on Home Page" classname="Validate the functional of Transfer Button on Home Page" time="2.148"/>
-  <testcase name="User see message &quot;Coming soon!&quot;" classname="Validate the functional of Transfer Button on Home Page" time="3.654"/>
-  <testcase name="classMethod" classname="Validate the functional of Transfer Button on Home Page" time="23.947"/>
+  <testcase name="User tap Transfer Button on Home Page" classname="Validate the functional of Transfer Button on Home Page" time="2.001"/>
+  <testcase name="User see message &quot;Coming soon!&quot;" classname="Validate the functional of Transfer Button on Home Page" time="3.658">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[Coming soon!]&gt; but was:&lt;[Login success]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Coming soon!]&gt; but was:&lt;[Login success]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at project.stepsdefinition.HomeStepDefinition.userSeeMessage(HomeStepDefinition.java:43)
+	at ✽.User see message &quot;Coming soon!&quot;(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:48)
+</failure>
+  </testcase>
+  <testcase name="classMethod" classname="Validate the functional of Transfer Button on Home Page" time="32.081">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[Coming soon!]&gt; but was:&lt;[Login success]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Coming soon!]&gt; but was:&lt;[Login success]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at project.stepsdefinition.HomeStepDefinition.userSeeMessage(HomeStepDefinition.java:43)
+	at ✽.User see message &quot;Coming soon!&quot;(file:///Users/chenr/IdeaProjects/DANA-Business-Project/src/test/resources/features/Home.feature:48)
+</failure>
+  </testcase>
   <system-out><![CDATA[
 @Home @ValidateTransferButton
 Scenario: Validate the functional of Transfer Button on Home Page ?[90m# src/test/resources/features/Home.feature:45?[0m
 ]]></system-out>
-  <system-err><![CDATA[Jun 25, 2020 1:48:18 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[Jun 25, 2020 1:58:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

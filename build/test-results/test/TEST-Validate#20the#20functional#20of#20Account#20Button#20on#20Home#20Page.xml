@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validate the functional of Account Button on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T06:47:53" hostname="dnid0666l01.local" time="14.611">
+<testsuite name="Validate the functional of Account Button on Home Page" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-06-25T06:57:37" hostname="dnid0666l01.local" time="10.298">
   <properties/>
-  <testcase name="User is on Login Page" classname="Validate the functional of Account Button on Home Page" time="6.5"/>
-  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate the functional of Account Button on Home Page" time="1.006"/>
-  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate the functional of Account Button on Home Page" time="1.454"/>
-  <testcase name="User click Sign In button on Login Page" classname="Validate the functional of Account Button on Home Page" time="0.686"/>
-  <testcase name="User is on Home Page" classname="Validate the functional of Account Button on Home Page" time="0.001"/>
-  <testcase name="User tap Account Button on Home Page" classname="Validate the functional of Account Button on Home Page" time="2.85"/>
-  <testcase name="User is on My Account page" classname="Validate the functional of Account Button on Home Page" time="1.298"/>
-  <testcase name="classMethod" classname="Validate the functional of Account Button on Home Page" time="26.499"/>
+  <testcase name="User is on Login Page" classname="Validate the functional of Account Button on Home Page" time="3.647"/>
+  <testcase name="User input phone number &quot;81266829795&quot; on phone number field" classname="Validate the functional of Account Button on Home Page" time="0.707"/>
+  <testcase name="User input password &quot;Pass@123&quot; on password field" classname="Validate the functional of Account Button on Home Page" time="1.343"/>
+  <testcase name="User click Sign In button on Login Page" classname="Validate the functional of Account Button on Home Page" time="0.702"/>
+  <testcase name="User is on Home Page" classname="Validate the functional of Account Button on Home Page" time="0.002"/>
+  <testcase name="User tap Account Button on Home Page" classname="Validate the functional of Account Button on Home Page" time="2.099"/>
+  <testcase name="User is on My Account page" classname="Validate the functional of Account Button on Home Page" time="1.246"/>
+  <testcase name="classMethod" classname="Validate the functional of Account Button on Home Page" time="24.189"/>
   <system-out><![CDATA[
 @Home @ValidateAccountButton
 Scenario: Validate the functional of Account Button on Home Page  ?[90m# src/test/resources/features/Home.feature:39?[0m
 ]]></system-out>
-  <system-err><![CDATA[Jun 25, 2020 1:47:53 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[Jun 25, 2020 1:57:37 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

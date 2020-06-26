@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public interface TransactionHistoryLocator {
 
     // Text View
-    By TEXT_TRANSACTION_HISTORY_TITLE = MobileBy.id("tvTransactionhistoryTitle");
+    By TEXT_TRANSACTION_HISTORY_TITLE = MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView");
     By TEXT_PAYMENT_STATUS = MobileBy.id("tvTransactionhistoryPaymentStatus");
     By TEXT_NOMINAL = MobileBy.id("tvTransactionhistoryNominal");
     By TEXT_DATE = MobileBy.id("tvTransactionhistoryDate");

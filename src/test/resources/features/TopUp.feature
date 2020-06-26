@@ -60,7 +60,7 @@ Feature: TopUp
     And  User tap Top Up button on Top Up Page
     And  User tap Pay Button on Payment Method Pop Up
     And  User is on Top Up Result Page
-    Then User see error message "Your Balance Already Reach Maximum Amount!" on Failed Top Up Result Page
+    Then User see error message "Your balance already reach maximum amount!" on Failed Top Up Result Page
 
   @TopUpButton
   Scenario: User tap Top Up Button with valid amount format

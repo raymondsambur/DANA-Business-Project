@@ -58,3 +58,21 @@ Feature: My Account
       | Change PIN      |
       | Change Profile  |
       | Setting         |
+
+#  @CheckBalanceAfterTopUp
+#  Scenario: Check Balance After User Made Top Up
+#    Given User is on My Account page
+#    When User see "Balance" on My Account page
+#    And User tap Back button on My Account page
+#    And User is on Home Page
+#    And User tap Top Up Button on Home Page
+#    And User is on Top Up page
+#    And User input nominal "10000" on top up nominal text field on Top Up Page
+#    And User tap Top Up button on Top Up Page
+#    And User tap Pay Button on Payment Method Pop Up
+#    And User is on "Success" Top Up Result Page
+#    And User tap Back to Home Button on Top Up Result Page
+#    And User is on Home Page
+#    And User tap My Account button on Home page
+#    And User is on My Account page
+#    Then User validate "Balance" with user "Rp.174.000"

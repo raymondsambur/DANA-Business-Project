@@ -15,4 +15,10 @@ public interface PayByQRLocator {
     // Icon
     By ICON_GALLERY = MobileBy.id("iv_gallery");
 
+    // Folder (depends on device locator)
+    By FOLDER_BUTTON = MobileBy.xpath("//android.widget.TextView[@text='Download']");
+    By IMAGE_SUCCESS = MobileBy.xpath("//android.view.ViewGroup[@content-desc='Photo taken on Jun 22, 2020 1:09:44 PM.']");
+    By IMAGE_FAILED = MobileBy.xpath("//android.view.ViewGroup[@content-desc='Photo taken on Jun 22, 2020 1:09:23 PM.']");
+    By IMAGE_REFUND = MobileBy.xpath("//android.view.ViewGroup[@content-desc='Photo taken on Jun 22, 2020 1:09:33 PM.']");
+
 }

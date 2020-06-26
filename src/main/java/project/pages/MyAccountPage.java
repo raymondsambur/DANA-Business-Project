@@ -4,13 +4,15 @@ import org.openqa.selenium.WebElement;
 import project.PageFunctions;
 import project.locators.MyAccountLocator;
 
+import static project.PageFunctions.waitABit;
 import static project.androidDriver.AndroidDriverInstance.androidDriver;
 
 public class MyAccountPage implements MyAccountLocator {
 
+
     // Check if on My Account Page
     public boolean onMyAccountPage(){
-        return PageFunctions.waitABit(ICON_USER).isDisplayed();
+        return waitABit(ICON_USER).isDisplayed();
     }
 
     // Labels Validation
@@ -18,6 +20,12 @@ public class MyAccountPage implements MyAccountLocator {
     public String checkBalance() { return androidDriver.findElement(TEXT_BALANCE).getText(); }
     public String checkEmail() { return androidDriver.findElement(TEXT_EMAIL).getText(); }
     public String checkPhoneNumber() {return androidDriver.findElement(TEXT_PHONE_NUMBER).getText(); }
+
+    // Labels Display
+    public boolean displayName() { return waitABit(TEXT_NAME).isDisplayed(); }
+    public boolean displayEmail() { return waitABit(TEXT_EMAIL).isDisplayed(); }
+    public boolean displayPhoneNumber() { return waitABit(TEXT_PHONE_NUMBER).isDisplayed(); }
+    public boolean displayBalance() { return waitABit(TEXT_BALANCE).isDisplayed(); }
 
     // Buttons Functions
     public void tapChangeProfile() { androidDriver.findElement(BUTTON_CHANGE_PROFILE).click(); }

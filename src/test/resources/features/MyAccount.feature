@@ -9,12 +9,6 @@ Feature: My Account
     And User is on Home Page
     And User tap My Account button on Home page
 
-  @VerifyChangePasswordButtonFunction
-  Scenario: Go to Change Password page by tapping Change Password button
-    Given User is on My Account page
-    When User tap Change Password button on My Account page
-    Then User see message "Coming soon!" on My Account page
-
   @VerifyBalanceButtonFunction
   Scenario: Go to Top Up page by tapping Balance button
     Given User is on My Account page
@@ -41,44 +35,26 @@ Feature: My Account
     And User tap no on pop up message
     Then User is on My Account page
 
-  @VerifyUserPhoneNumber
-  Scenario: Check if Phone Number shown is the same with user Phone Number
+  @VerifyUserData
+  Scenario Outline: Check User Data
     Given User is on My Account page
-    When User see Phone Number on My Account page
-    Then User validate Phone Number with registered Phone Number "081394577665"
+    When User see "<Data Display>" on My Account page
+    Then User validate "<Data Display>" with user "<Data>"
+    Examples:
+      | Data Display | Data                 |
+      | Phone Number | 081394577665         |
+      | Name         | Dananjoyo Helyudanto |
+      | Email        | dananjoyoh@gmail.com |
+      | Balance      | Rp.164.000           |
 
-  @VerifyUserName
-  Scenario: Check if Name shown is the same with user Name
+  @VerifyComingSoonFeature
+  Scenario Outline: Check Coming Soon Pop Up Message
     Given User is on My Account page
-    When User see Name on My Account page
-    Then User validate Name with registered Name "Dananjoyo Helyudanto"
-
-  @VerifyEmail
-  Scenario: Check if Email shown is the same with user Email
-    Given User is on My Account page
-    When User see Email on My Account page
-    Then User validate Email with registered Email "dananjoyoh@gmail.com"
-
-  @VerifyBalance
-  Scenario: Check if Balance shown is the same with user Balance
-    Given User is on My Account page
-    When User see Balance on My Account page
-    Then User validate Balance with user current Balance "Rp.133.000"
-
-  @VerifySettingButtonFunctionality
-  Scenario: Check setting button for incoming feature
-    Given User is on My Account page
-    When User tap setting button on My Account page
+    When User tap "<Feature>" button on My Account page
     Then User see message "Coming soon!" on My Account page
-
-  @VerifyChangeProfileButtonFunctionality
-  Scenario: Check Change Profile button for incoming feature
-    Given User is on My Account page
-    When User tap Change Profile button on My Account page
-    Then User see message "Coming soon!" on My Account page
-
-  @VerifyChangePINButtonFunctionality
-  Scenario: Check Change PIN button for incoming feature
-    Given User is on My Account page
-    When User tap Change PIN button on My Account page
-    Then User see message "Coming soon!" on My Account page
+    Examples:
+      | Feature         |
+      | Change Password |
+      | Change PIN      |
+      | Change Profile  |
+      | Setting         |

@@ -25,6 +25,11 @@ public class ChangePasswordStepDefinition {
 
     @And("User is on My Account page")
     public void userIsOnMyAccountPage() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         boolean actual = myAccountPage.onMyAccountPage();
         Assert.assertTrue(actual);
     }

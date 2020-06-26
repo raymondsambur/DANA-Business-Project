@@ -18,7 +18,9 @@ public class MyAccountStepDefinition {
     }
 
     @Then("User is on Top Up page")
-    public void userIsOnTopUpPage() { topUpPage.isOnTopUpPage(); }
+    public void userIsOnTopUpPage() {
+        topUpPage.isOnTopUpPage();
+    }
 
     @When("User tap Back button on My Account page")
     public void userTapBackButtonOnMyAccountPage() {
@@ -99,5 +101,59 @@ public class MyAccountStepDefinition {
     @When("User tap Change PIN button on My Account page")
     public void userTapChangePINButtonOnMyAccountPage() {
         myAccountPage.tapChangePINSecurity();
+    }
+
+    @When("User tap {string} button on My Account page")
+    public void userTapButtonOnMyAccountPage(String feature) {
+        switch (feature) {
+            case "Change Password":
+                myAccountPage.tapChangePassword();
+                break;
+            case "Change Profile":
+                myAccountPage.tapChangeProfile();
+                break;
+            case "Change PIN":
+                myAccountPage.tapChangePINSecurity();
+                break;
+            case "Setting":
+                myAccountPage.tapSetting();
+                break;
+        }
+    }
+
+    @When("User see {string} on My Account page")
+    public void userSeeOnMyAccountPage(String data) {
+        switch (data) {
+            case "Name":
+                Assert.assertTrue(myAccountPage.displayName());
+                break;
+            case "Email":
+                Assert.assertTrue(myAccountPage.displayEmail());
+                break;
+            case "Phone Number":
+                Assert.assertTrue(myAccountPage.displayPhoneNumber());
+                break;
+            case "Balance":
+                Assert.assertTrue(myAccountPage.displayBalance());
+                break;
+        }
+    }
+
+    @Then("User validate {string} with user {string}")
+    public void userValidateWithUser(String dataDisplay, String data) {
+        switch (dataDisplay) {
+            case "Name":
+                Assert.assertEquals(data, myAccountPage.checkUserName());
+                break;
+            case "Email":
+                Assert.assertEquals(data, myAccountPage.checkEmail());
+                break;
+            case "Phone Number":
+                Assert.assertEquals(data, myAccountPage.checkPhoneNumber());
+                break;
+            case "Balance":
+                Assert.assertEquals(data, myAccountPage.checkBalance());
+                break;
+        }
     }
 }

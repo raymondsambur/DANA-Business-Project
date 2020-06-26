@@ -37,7 +37,7 @@ Feature: Forgot Password
       Given User is on forgot password page
       When User input email "boboy@gmail.com" on Email Field
       And User click send button
-      Then User is on change password page
+      Then User see error message on bottom "Reset password link has been sent to your email."
 
     @NegativeButtonSend
     Scenario: FP-02-02 : User input not registered email

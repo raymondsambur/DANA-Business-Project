@@ -39,7 +39,7 @@ public class HomeStepDefinition {
     @Then("User see message {string}")
     public void userSeeMessage(String comingsoon) throws InterruptedException {
         String actual = homePage.viewMessage();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         Assert.assertEquals(comingsoon, actual); }
 
     @When("User tap QR Scan Button on Home Page")

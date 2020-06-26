@@ -17,7 +17,7 @@ Feature: TopUp
     And  User tap Change button on Payment Method Pop Up
     And  User tap Alfamart on Payment Method List
     And  User tap Pay Button on Payment Method Pop Up
-    Then  User is on Success Top Up Result Page
+    Then  User is on "result" Top Up Result Page
 
   Scenario: User top up valid amount with Bank Transfer Payment Method
     Given User is on Top Up page
@@ -26,7 +26,7 @@ Feature: TopUp
     And  User tap Change button on Payment Method Pop Up
     And  User tap Bank Transfer on Payment Method List
     And  User tap Pay Button on Payment Method Pop Up
-    Then  User is on Success Top Up Result Page
+    Then  User is on "result" Top Up Result Page
 
   Scenario: User top up valid amount with BRI Debit Card Payment Method
     Given User is on Top Up page
@@ -35,7 +35,7 @@ Feature: TopUp
     And  User tap Change button on Payment Method Pop Up
     And  User tap BRI Debit Card on Payment Method List
     And  User tap Pay Button on Payment Method Pop Up
-    Then  User is on Success Top Up Result Page
+    Then  User is on "result" Top Up Result Page
 
   @Invalid
   Scenario Outline: User top up with invalid amount
@@ -59,7 +59,7 @@ Feature: TopUp
     When  User input nominal "1000000" on top up nominal text field on Top Up Page
     And  User tap Top Up button on Top Up Page
     And  User tap Pay Button on Payment Method Pop Up
-    And  User is on Failed Top Up Result Page
+    And  User is on "result" Top Up Result Page
     Then User see error message "Your Balance Already Reach Maximum Amount!" on Failed Top Up Result Page
 
   @TopUpButton
@@ -90,7 +90,7 @@ Feature: TopUp
     When  User tap Top Up button on Top Up Page
     When  User see Payment Method Pop Up on Top Up Page
     When  User tap Pay Button on Payment Method Pop Up
-    Then  User is on Success Top Up Result Page
+    Then  User is on "result" Top Up Result Page
 
   Scenario: User validate the functional of Change Button on Payment Method Pop Up
     Given User is on Top Up page

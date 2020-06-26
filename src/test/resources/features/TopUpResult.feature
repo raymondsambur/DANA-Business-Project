@@ -15,10 +15,10 @@
     When  User input nominal "<nominal>" on top up nominal text field on Top Up Page
     And   User tap Top Up button on Top Up Page
     And   User tap Pay Button on Payment Method Pop Up
-    And   User is on "<result>" Top Up Result Page
+    And   User is on Top Up Result Page
     And   User tap Back to Home Button on Top Up Result Page
     Then  User is on Home Page
     Examples:
-    |nominal|result |
-    |1000   |Success|
-    |1000000|Failed |
+    |nominal|
+    |1000   |
+    |1000000|

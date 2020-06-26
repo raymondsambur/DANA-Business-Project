@@ -11,7 +11,7 @@ public interface TopUpLocator {
     By TEXT_BALANCE = MobileBy.id("tv_amount");
 
     // Edit Text
-    By INPUT_AMOUNT = MobileBy.id("textinput_placeholder");
+    By INPUT_AMOUNT = MobileBy.id("et_nominal_top_up");
 
     // Icon
     By ICON_NOMINAL = MobileBy.id("text_input_start_icon");

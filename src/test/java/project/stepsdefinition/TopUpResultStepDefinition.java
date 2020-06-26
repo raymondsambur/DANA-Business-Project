@@ -21,4 +21,7 @@ public class TopUpResultStepDefinition {
         String actual = topUpResultPage.getResult();
         Assert.assertEquals(actual, result);
     }
+
+    @Then("User is on Top Up Result Page")
+    public void userIsOnTopUpResultPage() { topUpResultPage.isOnTopUpResultPage(); }
 }

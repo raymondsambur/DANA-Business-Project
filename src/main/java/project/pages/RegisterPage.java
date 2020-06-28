@@ -1,5 +1,6 @@
 package project.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import project.PageFunctions;
 import project.androidDriver.AndroidDriverInstance;
@@ -51,38 +52,54 @@ public class RegisterPage {
         return registerButton.isEnabled();
     }
 
-    public boolean checkWarningText(){
-        return PageFunctions.waitABit(RegisterLocator.TEXT_ERROR_GENERAL).isDisplayed();
+//    public boolean checkWarningText(){
+//        return PageFunctions.waitABit(RegisterLocator.TEXT_ERROR_GENERAL).isDisplayed();
+//    }
+//
+//    public  String getErrorText(){
+//        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_GENERAL);
+//        return errortext.getText();
+//    }
+//
+//    public String getNameFieldErrorText(){
+//        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_NAME);
+//        return errortext.getText();
+//    }
+//
+//    public String getPhoneFieldErrorText(){
+//        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_PHONE);
+//        return errortext.getText();
+//    }
+//
+//    public String getEmailFieldErrorText(){
+//        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_EMAIL);
+//        return errortext.getText();
+//    }
+//
+//    public String getPassFieldErrorText(){
+//        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_PASSWORD);
+//        return errortext.getText();
+//    }
+//
+//    public String getConfirmationFieldErrorText(){
+//        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_CONFIRMATION_PASSWORD);
+//        return errortext.getText();
+//    }
+
+    public boolean isPasswordMasked() {
+        WebElement password = AndroidDriverInstance.androidDriver.findElement(By.xpath("//android.widget.EditText[@password = 'true']"));
+
+        return password.isDisplayed();
     }
 
-    public  String getErrorText(){
-        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_GENERAL);
-        return errortext.getText();
+    public boolean checkPopUp(){
+        return PageFunctions.waitABit(LoginLocator.POP_UP_MESSAGE).isDisplayed();
     }
 
-    public String getNameFieldErrorText(){
-        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_NAME);
-        return errortext.getText();
-    }
+    public String getPopUpMessage(){
+        WebElement message = AndroidDriverInstance.androidDriver.findElement(LoginLocator.POP_UP_MESSAGE);
 
-    public String getPhoneFieldErrorText(){
-        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_PHONE);
-        return errortext.getText();
-    }
-
-    public String getEmailFieldErrorText(){
-        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_EMAIL);
-        return errortext.getText();
-    }
-
-    public String getPassFieldErrorText(){
-        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_PASSWORD);
-        return errortext.getText();
-    }
-
-    public String getConfirmationFieldErrorText(){
-        WebElement errortext = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.TEXT_ERROR_CONFIRMATION_PASSWORD);
-        return errortext.getText();
+        return message.getText();
     }
 
 }

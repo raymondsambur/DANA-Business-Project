@@ -26,7 +26,7 @@ Feature: Register
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
-    Then User see register error message "Email already exist!"
+    Then User see register error message "Phone number or email already exist!"
 
   Scenario: 3. Register new user with already registered phone number
     Given User is on DANA bussiness Register Page
@@ -36,7 +36,7 @@ Feature: Register
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
-    Then User see register error message "Phone Number already exist!"
+    Then User see register error message "Phone number or email already exist!"
 
   @RegButtonNegativeOnly
   Scenario: 2. Register new user with Valid name, Valid email, Valid Phone number, Invalid Password (no symbol), Valid Confirmation
@@ -59,7 +59,6 @@ Feature: Register
     Then User see Register button is unclickable
     Examples:
       | name                            | email                  | phone            | password              | confirmation |
-      | Agung                           | emaildummy@gmail.com   | 81212341234      | P@ssw0rd              | P@ssw0rd     |
       | Agung                           | emaildummy@gmail.com   | 81212341234      | Passw0rd              | Passw0rd     |
       | Agung                           | emaildummy@gmail.com   | 081212341234     | P@ssw0rd              | P@ssw0rd     |
       | Agung                           | emaildummy@gmail.com   | 6281212341234    | P@SSW0RD              | P@SSW0RD     |

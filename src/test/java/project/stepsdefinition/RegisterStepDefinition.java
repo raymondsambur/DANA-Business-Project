@@ -59,43 +59,43 @@ public class RegisterStepDefinition {
         Assert.assertFalse(statusButton);
     }
 
-    @Then("User see register error message {string}")
-    public void userSeeRegisterErrorMessage(String errormsg) {
-        if (registerPage.checkWarningText()){
-            String message = registerPage.getErrorText();
-            Assert.assertEquals(errormsg, message);
-        }
-    }
-
-    @Then("User see name field error message {string}")
-    public void userSeeNameFieldErrorMessage(String errormsg) {
-        String message = registerPage.getNameFieldErrorText();
-        Assert.assertEquals(errormsg, message);
-    }
-
-    @Then("User see email field error message {string}")
-    public void userSeeEmailFieldErrorMessage(String errormsg) {
-        String message = registerPage.getEmailFieldErrorText();
-        Assert.assertEquals(errormsg, message);
-    }
-
-    @Then("User see phone field error message {string}")
-    public void userSeePhoneFieldErrorMessage(String errormsg) {
-        String message = registerPage.getPhoneFieldErrorText();
-        Assert.assertEquals(errormsg, message);
-    }
-
-    @Then("User see password field error message {string}")
-    public void userSeePasswordFieldErrorMessage(String errormsg) {
-        String message = registerPage.getPassFieldErrorText();
-        Assert.assertEquals(errormsg, message);
-    }
-
-    @Then("User see confirmaion field error message {string}")
-    public void userSeeConfirmaionFieldErrorMessage(String errormsg) {
-        String message = registerPage.getConfirmationFieldErrorText();
-        Assert.assertEquals(errormsg, message);
-    }
+//    @Then("User see register error message {string}")
+//    public void userSeeRegisterErrorMessage(String errormsg) {
+//        if (registerPage.checkWarningText()){
+//            String message = registerPage.getErrorText();
+//            Assert.assertEquals(errormsg, message);
+//        }
+//    }
+//
+//    @Then("User see name field error message {string}")
+//    public void userSeeNameFieldErrorMessage(String errormsg) {
+//        String message = registerPage.getNameFieldErrorText();
+//        Assert.assertEquals(errormsg, message);
+//    }
+//
+//    @Then("User see email field error message {string}")
+//    public void userSeeEmailFieldErrorMessage(String errormsg) {
+//        String message = registerPage.getEmailFieldErrorText();
+//        Assert.assertEquals(errormsg, message);
+//    }
+//
+//    @Then("User see phone field error message {string}")
+//    public void userSeePhoneFieldErrorMessage(String errormsg) {
+//        String message = registerPage.getPhoneFieldErrorText();
+//        Assert.assertEquals(errormsg, message);
+//    }
+//
+//    @Then("User see password field error message {string}")
+//    public void userSeePasswordFieldErrorMessage(String errormsg) {
+//        String message = registerPage.getPassFieldErrorText();
+//        Assert.assertEquals(errormsg, message);
+//    }
+//
+//    @Then("User see confirmaion field error message {string}")
+//    public void userSeeConfirmaionFieldErrorMessage(String errormsg) {
+//        String message = registerPage.getConfirmationFieldErrorText();
+//        Assert.assertEquals(errormsg, message);
+//    }
 
     @When("User tap Back button on Register Page")
     public void userTapBackButtonOnRegisterPage() {

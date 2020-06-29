@@ -81,4 +81,9 @@ public class RegisterPage {
         return message.getText();
     }
 
+    public String getPasswordString(){
+        WebElement password = AndroidDriverInstance.androidDriver.findElement(RegisterLocator.INPUT_PASSWORD);
+        return password.getText();
+    }
+
 }

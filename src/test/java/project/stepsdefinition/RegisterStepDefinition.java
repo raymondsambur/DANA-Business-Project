@@ -90,4 +90,12 @@ public class RegisterStepDefinition {
     public void userClickShowPasswordButtonOnPasswordTextField() {
         registerPage.tapHideShowPassButton();
     }
+
+    @Then("User see string {string} on password text field")
+    public void userSeeStringOnPasswordTextField(String isiPassword) {
+        String passwordnya = registerPage.getPasswordString();
+
+        //Assert.assertEquals(password, isiText);
+        Assert.assertTrue(passwordnya.contains(isiPassword));
+    }
 }

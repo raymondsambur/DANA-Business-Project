@@ -269,7 +269,7 @@ Feature: Register
     And User input phone number "81212341234" on phone number text field
     And User input Password "P@ssw0rd" on password text field
     And User click show password button on password text field
-    Then User see "P@ssw0rd" on password field
+    Then User see string "P@ssw0rd" on password text field
 
   @PasswordFieldHide/showButton3
   Scenario: User input invalid password and click hide/show password button
@@ -279,7 +279,7 @@ Feature: Register
     And User input phone number "81212341234" on phone number text field
     And User input Password "Passw0rd" on password text field
     And User click show password button on password text field
-    Then User see "Passw0rd" on password field
+    Then User see string "Passw0rd" on password text field
 
 # Confirmation Field
   @ConfirmationPositive

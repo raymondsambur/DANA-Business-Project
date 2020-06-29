@@ -11,8 +11,8 @@ Feature: Register
   Scenario: 1. Register new user with Valid name, Valid email, Valid Phone number, Valid Password, Valid Confirmation
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
-    And User input email "emaildummy4@gmail.com" on email text field
-    And User input phone number "81211111115" on phone number text field
+    And User input email "emaildummy6@gmail.com" on email text field
+    And User input phone number "81211111116" on phone number text field
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
@@ -23,8 +23,8 @@ Feature: Register
   Scenario: 2. Register new user with already registered email
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
-    And User input email "emaildummy4@gmail.com" on email text field
-    And User input phone number "81211111115" on phone number text field
+    And User input email "emaildummy6@gmail.com" on email text field
+    And User input phone number "81211111116" on phone number text field
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button

@@ -46,11 +46,11 @@ Feature: TopUp
       |nominal    |errorMessage                                     |
       |999        |Available Transaction only Rp 1.000 to 1.000.000!|
       |1000001    |Available Transaction only Rp 1.000 to 1.000.000!|
-      |qwertyuiop |Input Number Only!                               |
-      |!@#$%^&*,.;|Input Number Only!                               |
-      |qwerty12345|Input Number Only!                               |
-      |!@#$1234,.;|Input Number Only!                               |
-      |🙃🙃🙃🙃🙃🙃 |Input Number Only!                               |
+      |qwertyuiop |Input number only!                               |
+      |!@#$%^&*,.;|Input number only!                               |
+      |qwerty12345|Input number only!                               |
+      |!@#$1234,.;|Input number only!                               |
+      |🙃🙃🙃🙃🙃🙃 |Input number only!                               |
       |           |Nominal cannot be empty!                         |
 
   @ExceedLimitBalance

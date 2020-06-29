@@ -50,7 +50,7 @@ Feature: TopUp
       |!@#$%^&*,.;|Input number only!                               |
       |qwerty12345|Input number only!                               |
       |!@#$1234,.;|Input number only!                               |
-      |🙃🙃🙃🙃🙃🙃 |Input number only!                               |
+      |🙃🙃🙃🙃🙃🙃 |Nominal cannot be empty!                         |
       |           |Nominal cannot be empty!                         |
 
   @ExceedLimitBalance

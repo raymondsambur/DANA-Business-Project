@@ -112,7 +112,6 @@ public class LoginStepDefinition {
     public void userSeeErrorMessageOnPhoneNumberField(String errorText) {
         loginPage.checkWarningTextPassword();
         String actual = loginPage.getWarningTextPassword(errorText);
-
         Assert.assertEquals(errorText, actual);
     }
 

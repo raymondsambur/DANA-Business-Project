@@ -13,7 +13,7 @@ public interface RegisterLocator {
 //    By TEXT_ERROR_EMAIL = MobileBy.id("tvRegisterErrorEmail");
 //    By TEXT_ERROR_PASSWORD = MobileBy.id("tvRegisterErrorPassword");
 //    By TEXT_ERROR_CONFIRMATION_PASSWORD = MobileBy.id("tvRegisterErrorRePassword");
-    By TEXT_ERROR_MESSAGE = MobileBy.id("tvRegisterErrorGeneral");
+    By TEXT_ERROR_MESSAGE = MobileBy.id("textinput_error");
     By POP_UP_MESSAGE = MobileBy.id("snackbar_text");
 
     // Edit Text

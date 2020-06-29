@@ -35,6 +35,7 @@ Feature: My Account
     And User tap no on pop up message
     Then User is on My Account page
 
+  #Please do manual check on balance before run this scenario.
   @VerifyUserData
   Scenario Outline: Check User Data
     Given User is on My Account page
@@ -59,20 +60,21 @@ Feature: My Account
       | Change Profile  |
       | Setting         |
 
-#  @CheckBalanceAfterTopUp
-#  Scenario: Check Balance After User Made Top Up
-#    Given User is on My Account page
-#    When User see "Balance" on My Account page
-#    And User tap Back button on My Account page
-#    And User is on Home Page
-#    And User tap Top Up Button on Home Page
-#    And User is on Top Up page
-#    And User input nominal "10000" on top up nominal text field on Top Up Page
-#    And User tap Top Up button on Top Up Page
-#    And User tap Pay Button on Payment Method Pop Up
-#    And User is on "Success" Top Up Result Page
-#    And User tap Back to Home Button on Top Up Result Page
-#    And User is on Home Page
-#    And User tap My Account button on Home page
-#    And User is on My Account page
-#    Then User validate "Balance" with user "Rp.174.000"
+  #Please recount the balance to do this testing. The latest step need to be calculated first so this scenario can pass.
+  @CheckBalanceAfterTopUp
+  Scenario: Check Balance After User Made Top Up
+    Given User is on My Account page
+    When User see "Balance" on My Account page
+    And User tap Back button on My Account page
+    And User is on Home Page
+    And User tap Top Up Button on Home Page
+    And User is on Top Up page
+    And User input nominal "10000" on top up nominal text field on Top Up Page
+    And User tap Top Up button on Top Up Page
+    And User tap Pay Button on Payment Method Pop Up
+    And User is on "Success" Top Up Result Page
+    And User tap Back to Home Button on Top Up Result Page
+    And User is on Home Page
+    And User tap My Account button on Home page
+    And User is on My Account page
+    Then User validate "Balance" with user "Rp.454.000"

@@ -59,46 +59,43 @@ public class RegisterStepDefinition {
         Assert.assertFalse(statusButton);
     }
 
-//    @Then("User see register error message {string}")
-//    public void userSeeRegisterErrorMessage(String errormsg) {
-//        if (registerPage.checkWarningText()){
-//            String message = registerPage.getErrorText();
-//            Assert.assertEquals(errormsg, message);
-//        }
-//    }
-//
-//    @Then("User see name field error message {string}")
-//    public void userSeeNameFieldErrorMessage(String errormsg) {
-//        String message = registerPage.getNameFieldErrorText();
-//        Assert.assertEquals(errormsg, message);
-//    }
-//
-//    @Then("User see email field error message {string}")
-//    public void userSeeEmailFieldErrorMessage(String errormsg) {
-//        String message = registerPage.getEmailFieldErrorText();
-//        Assert.assertEquals(errormsg, message);
-//    }
-//
-//    @Then("User see phone field error message {string}")
-//    public void userSeePhoneFieldErrorMessage(String errormsg) {
-//        String message = registerPage.getPhoneFieldErrorText();
-//        Assert.assertEquals(errormsg, message);
-//    }
-//
-//    @Then("User see password field error message {string}")
-//    public void userSeePasswordFieldErrorMessage(String errormsg) {
-//        String message = registerPage.getPassFieldErrorText();
-//        Assert.assertEquals(errormsg, message);
-//    }
-//
-//    @Then("User see confirmaion field error message {string}")
-//    public void userSeeConfirmaionFieldErrorMessage(String errormsg) {
-//        String message = registerPage.getConfirmationFieldErrorText();
-//        Assert.assertEquals(errormsg, message);
-//    }
-
     @When("User tap Back button on Register Page")
     public void userTapBackButtonOnRegisterPage() {
         registerPage.tapBackButton();
+    }
+
+    @Then("User see register pop up message {string}")
+    public void userSeeRegisterPopUpMessage(String expected) {
+        if (registerPage.checkPopUp()) {
+            String actual = registerPage.getPopUpMessage();
+            Assert.assertEquals(expected, actual);
+        }
+    }
+
+    @Then("User see register error message {string}")
+    public void userSeeRegisterErrorMessage(String errorText) {
+        if (registerPage.checkErrorText()){
+            String message = registerPage.getErrorText();
+            Assert.assertEquals(errorText, message);
+        }
+    }
+
+    @Then("User see Password is masked")
+    public void userSeePasswordIsMasked() {
+        boolean status = registerPage.isPasswordMasked();
+        Assert.assertTrue(status);
+    }
+
+    @And("User click show password button on password text field")
+    public void userClickShowPasswordButtonOnPasswordTextField() {
+        registerPage.tapHideShowPassButton();
+    }
+
+    @Then("User see string {string} on password text field")
+    public void userSeeStringOnPasswordTextField(String isiPassword) {
+        String passwordnya = registerPage.getPasswordString();
+
+        //Assert.assertEquals(password, isiText);
+        Assert.assertTrue(passwordnya.contains(isiPassword));
     }
 }

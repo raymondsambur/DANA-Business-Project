@@ -18,7 +18,7 @@ public interface TopUpLocator {
 
     // Button
     By BUTTON_TOP_UP = MobileBy.id("bt_top_up");
-    By BUTTON_BACK = MobileBy.xpath("android.widget.ImageButton[@content-desc='Navigate up']");
+    By BUTTON_BACK = MobileBy.xpath("//android.widget.ImageButton[@content-desc='Navigate up']");
 
     //Payment Method
     By TEXT_PAYMENT_METHOD = MobileBy.id("tv_method_title");

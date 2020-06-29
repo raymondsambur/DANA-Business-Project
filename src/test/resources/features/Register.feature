@@ -7,6 +7,7 @@ Feature: Register
 
 # Register Button
   @RegButtonPositive
+# Make sure this scenario filled with ONLY unregistered account
   Scenario: 1. Register new user with Valid name, Valid email, Valid Phone number, Valid Password, Valid Confirmation
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
@@ -18,6 +19,7 @@ Feature: Register
     Then User directed to the Login Page
 
   @RegButtonNegativeBecauseAlreadyRegistered
+# Make sure this scenario filled with already registered account
   Scenario: 2. Register new user with already registered email
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
@@ -26,7 +28,7 @@ Feature: Register
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
-    Then User see register error message "Phone number or email already exist!"
+    Then User see register pop up message "Phone number or email already exist!"
 
   Scenario: 3. Register new user with already registered phone number
     Given User is on DANA bussiness Register Page
@@ -36,7 +38,7 @@ Feature: Register
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
-    Then User see register error message "Phone number or email already exist!"
+    Then User see register pop up message "Phone number or email already exist!"
 
   @RegButtonNegativeOnly
   Scenario: 2. Register new user with Valid name, Valid email, Valid Phone number, Invalid Password (no symbol), Valid Confirmation
@@ -102,125 +104,137 @@ Feature: Register
   @NameFieldNegativeEmpty
   Scenario: 1. User didnt input name on name text field
     Given User is on DANA bussiness Register Page
-    When User input name "" on name text field
-    Then User see name field error message "Name Field cannot be empty!"
+    When User input name "😭" on name text field
+    Then User see register error message "Name cannot be empty!"
 
   @NameFieldNegativeWithScenarioOutline
   Scenario Outline: 1. User input invalid name on name text field
     Given User is on DANA bussiness Register Page
     When User input name "<namefield>" on name text field
-    Then User see name field error message "Name field should alphabet only with 30 characters maximum!"
+    Then User see register error message "Name field should alphabet only with 30 characters maximum!"
     Examples:
       | namefield                       |
-      | Agung                           |
       | Agung2                          |
       | 461_1176                        |
-      | 😭agung                         |
+      | :(agung                         |
       | agung12345678901234567890123456 |
       | agungaaaaaaaaaaaaaaaaaaaaaaaaaa |
       | !!!!!!!!!!!!!!!!!!!!12345678901 |
-      | 😭😭😭                          |
+      | :((                             |
       | 1234                            |
       | @@@@                            |
-      | 😭1234                          |
-      | 😭@@@                           |
-
-
+      | :(1234                          |
+      | :(@@@                           |
 
 # Email Field
   @EmailFieldPositive
   Scenario: 1. User input valid email format on email text field
     Given User is on DANA bussiness Register Page
-    When User input email "emaildummy@gmail.com" on email text field
+    When User input name "Agung" on name text field
+    And User input email "emaildummy@gmail.com" on email text field
     Then User see no error message
 
   @EmailFieldNegativeEmpty
   Scenario: User didnt input email on email text field
     Given User is on DANA bussiness Register Page
-    When User input email "" on email text field
-    Then User see email field error message "Email Field cannot be empty"
+    When User input name "Agung" on name text field
+    And User input email "😭" on email text field
+    Then User see register error message "Email cannot be empty!"
 
   @EmailFieldNegativeWithScenarioOutline
   Scenario Outline: User input invalid email on email text field
     Given User is on DANA bussiness Register Page
-    When User input email "<emailfield>" on email text field
-    Then User see email field error message "Wrong Email Format! Example : email123@gmail.com"
+    When User input name "Agung" on name text field
+    And User input email "<emailfield>" on email text field
+    Then User see register error message "Wrong Email Format! Example : email123@gmail.com"
     Examples:
-      | emailfield           |
-      | emaildummy@gmail.com |
-      | emaildummy@gmail     |
-      | emaildummy@.com      |
-      | emaildummy@          |
-      | emaildummygmail.com  |
-      | emaildummygmail      |
-      | emaildummy.com       |
-      | emaildummy           |
-      | @gmail.com           |
-      | @gmail               |
-      | @.com                |
-      | @                    |
-      | gmail.com            |
-      | gmail                |
-      | .com                 |
+      | emailfield          |
+      | emaildummy@gmail    |
+      | emaildummy@.com     |
+      | emaildummy@         |
+      | emaildummygmail.com |
+      | emaildummygmail     |
+      | emaildummy.com      |
+      | emaildummy          |
+      | @gmail.com          |
+      | @gmail              |
+      | @.com               |
+      | @                   |
+      | gmail.com           |
+      | gmail               |
+      | .com                |
 
 
 # Phone Field
   @PhoneFieldPositive
   Scenario: 1. User input valid Phone number format on Phone number text field
     Given User is on DANA bussiness Register Page
-    When User input phone number "81212341234" on phone number text field
+    When User input name "Agung" on name text field
+    And User input email "emaildummy@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
     Then User see no error message
 
   @PhoneFieldNegativeEmpty
   Scenario: User didnt input Phone number on Phone number text field
     Given User is on DANA bussiness Register Page
-    When User input phone number "81212341234" on phone number text field
-    Then User see phone field error message "Phone Number Field cannot be empty!"
+    When User input name "Agung" on name text field
+    And User input email "emaildummy@gmail.com" on email text field
+    And User input phone number "😭" on phone number text field
+    Then User see error message "Phone Number cannot be empty!"
 
   @PhoneFieldNegativeWithScenarioOutline
   Scenario Outline: User input invalid Phone number on Phone number text field
     Given User is on DANA bussiness Register Page
-    When User input phone number "<phonefield>" on phone number text field
-    Then User see phone field error message "Wrong Phone Number format! All Numbers and 9 - 12 digits!"
+    When User input name "Agung" on name text field
+    And User input email "emaildummy@gmail.com" on email text field
+    And User input phone number "<phonefield>" on phone number text field
+    Then User see register error message "Wrong Phone Number format! All Numbers and 9 – 12 digits!"
     Examples:
       | phonefield         |
-      | 81212341234        |
       | 081212341234       |
       | 6281212341234      |
       | 8121234123456780   |
       | +6281212341234     |
       | 8121234abcd        |
       | 8121234@@@@        |
-      | 8121234😭😭😭😭    |
+      | 8121234:(:(:(      |
       | abcdefghijkl       |
-      | 😭😭😭😭😭😭😭😭   |
+      | :(:(:(:(:(:(       |
       | 81212341           |
       | @@@@@@@@@          |
-      | @@@@@😭😭😭😭      |
-      | abcde😭😭😭😭      |
-      | 8121234567😭😭😭😭 |
+      | @@@@@:(:(:(:(      |
+      | abcde:(:(:(:(      |
+      | 8121234567:(:(:(:( |
 
 # Password Field
   @PasswordFieldPositive
   Scenario: 1. User input valid password format on password text field
     Given User is on DANA bussiness Register Page
-    When User input Password "P@ssw0rd" on password text field
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "P@ssw0rd" on password text field
     Then User see no error message
 
   @PasswordFieldNegativeEmpty
   Scenario: User didnt input password on password text field
     Given User is on DANA bussiness Register Page
-    When User input Password "" on password text field
-    Then User see password field error message "Password Field cannot be empty!"
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "😭" on password text field
+    Then User see error message "Password cannot be empty!"
 
   @PasswordFieldNegativeWithScenarioOutline
   Scenario Outline: User input invalid password on password text field
     Given User is on DANA bussiness Register Page
-    When User input Password "<passwordfield>" on password text field
-    Then User see password field error message "Password should be 8 digits and contains : a-z, A-Z, 1-9, Symbol!"
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "<passwordfield>" on password text field
+    Then User see error message "Password should be 8 digits and contains : a–z, A–Z, 1–9, Symbol!"
     Examples:
       | passwordfield         |
-      | P@ssw0rd              |
       | Passw0rd              |
       | P@SSW0RD              |
       | PASSW0RD              |
@@ -238,31 +252,68 @@ Feature: Register
       | P@ssw0r               |
       | P@ssw0rd1111111111111 |
 
+  @PasswordFieldHide/showButton1
+  Scenario: User input password and didn't click hide/show password button
+    Given User is on DANA bussiness Register Page
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "P@ssw0rd" on password text field
+    Then User see Password is masked
+
+  @PasswordFieldHide/showButton2
+  Scenario: User input valid password and click hide/show password button
+    Given User is on DANA bussiness Register Page
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "P@ssw0rd" on password text field
+    And User click show password button on password text field
+    Then User see string "P@ssw0rd" on password text field
+
+  @PasswordFieldHide/showButton3
+  Scenario: User input invalid password and click hide/show password button
+    Given User is on DANA bussiness Register Page
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "Passw0rd" on password text field
+    And User click show password button on password text field
+    Then User see string "Passw0rd" on password text field
 
 # Confirmation Field
   @ConfirmationPositive
   Scenario: 1. User input valid password format on confirmation password text field
     Given User is on DANA bussiness Register Page
-    When User input Password "P@ssw0rd" on password text field
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     Then User see no error message
 
   @ConfirmationNegativeEmpty
   Scenario: 1. User didnt re-type password confirmation password text field
     Given User is on DANA bussiness Register Page
-    When User input Password "P@ssw0rd" on password text field
-    And User input Password "" on password confirmation text field
-    Then User see confirmaion field error message "Please Re-enter your password!"
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
+    And User input Password "P@ssw0rd" on password text field
+    And User input Password "😭" on password confirmation text field
+    Then User see error message "Password Confirmation cannot be empty!"
 
   @ConfirmationNegativeOnly
   Scenario: 1. User didnt re-type match password confirmation password text field
     Given User is on DANA bussiness Register Page
+    When User input name "Agung" on name text field
+    And User input email "emaildummy2@gmail.com" on email text field
+    And User input phone number "81212341234" on phone number text field
     When User input Password "P@ssw0rd" on password text field
     And User input Password "Password" on password confirmation text field
-    Then User see confirmaion field error message "Password doesn't match!"
+    Then User see error message "Password does not match!"
 
 # Back Button
-  @BackButton
+  @RegisterBackButton
   Scenario: Verify Back Button functionality
     Given User is on DANA bussiness Register Page
     When User tap Back button on Register Page

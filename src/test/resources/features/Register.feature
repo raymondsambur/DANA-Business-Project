@@ -11,8 +11,8 @@ Feature: Register
   Scenario: 1. Register new user with Valid name, Valid email, Valid Phone number, Valid Password, Valid Confirmation
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
-    And User input email "emaildummy01@gmail.com" on email text field
-    And User input phone number "81211111112" on phone number text field
+    And User input email "emaildummy4@gmail.com" on email text field
+    And User input phone number "81211111115" on phone number text field
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
@@ -23,8 +23,8 @@ Feature: Register
   Scenario: 2. Register new user with already registered email
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
-    And User input email "emaildummy@gmail.com" on email text field
-    And User input phone number "81212341235" on phone number text field
+    And User input email "emaildummy4@gmail.com" on email text field
+    And User input phone number "81211111115" on phone number text field
     And User input Password "P@ssw0rd" on password text field
     And User input Password "P@ssw0rd" on password confirmation text field
     And User Tap Register button
@@ -104,7 +104,7 @@ Feature: Register
   @NameFieldNegativeEmpty
   Scenario: 1. User didnt input name on name text field
     Given User is on DANA bussiness Register Page
-    When User input name "😭" on name text field
+    When User input name "" on name text field
     Then User see register error message "Name cannot be empty!"
 
   @NameFieldNegativeWithScenarioOutline
@@ -138,7 +138,7 @@ Feature: Register
   Scenario: User didnt input email on email text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
-    And User input email "😭" on email text field
+    And User input email "" on email text field
     Then User see register error message "Email cannot be empty!"
 
   @EmailFieldNegativeWithScenarioOutline
@@ -179,7 +179,7 @@ Feature: Register
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy@gmail.com" on email text field
-    And User input phone number "😭" on phone number text field
+    And User input phone number "" on phone number text field
     Then User see error message "Phone Number cannot be empty!"
 
   @PhoneFieldNegativeWithScenarioOutline
@@ -222,7 +222,7 @@ Feature: Register
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
     And User input phone number "81212341234" on phone number text field
-    And User input Password "😭" on password text field
+    And User input Password "" on password text field
     Then User see error message "Password cannot be empty!"
 
   @PasswordFieldNegativeWithScenarioOutline
@@ -299,7 +299,7 @@ Feature: Register
     And User input email "emaildummy2@gmail.com" on email text field
     And User input phone number "81212341234" on phone number text field
     And User input Password "P@ssw0rd" on password text field
-    And User input Password "😭" on password confirmation text field
+    And User input Password "" on password confirmation text field
     Then User see error message "Password Confirmation cannot be empty!"
 
   @ConfirmationNegativeOnly

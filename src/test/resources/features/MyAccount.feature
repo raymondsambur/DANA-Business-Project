@@ -46,7 +46,7 @@ Feature: My Account
       | Phone Number | 081394577665         |
       | Name         | Dananjoyo Helyudanto |
       | Email        | dananjoyoh@gmail.com |
-      | Balance      | Rp.454.000           |
+      | Balance      | Rp.1.420.000         |
 
   @VerifyComingSoonFeature
   Scenario Outline: Check Coming Soon Pop Up Message
@@ -77,4 +77,4 @@ Feature: My Account
     And User is on Home Page
     And User tap My Account button on Home page
     And User is on My Account page
-    Then User validate "Balance" with user "Rp.454.000"
+    Then User validate "Balance" with user "Rp.1.430.000"

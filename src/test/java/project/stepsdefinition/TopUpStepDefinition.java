@@ -33,8 +33,8 @@ public class TopUpStepDefinition {
     @And("User tap Pay Button on Payment Method Pop Up")
     public void userTapPayButtonOnPaymentMethodPopUp() { topUpPage.tapPayButton(); }
 
-    @And("User tap Bank Transfer on Payment Method List")
-    public void userTapBankTransferOnPaymentMethodList() { topUpPage.tapBankTransfer(); }
+    @And("User tap Virtual Account on Payment Method List")
+    public void userTapVirtualAccountOnPaymentMethodList() { topUpPage.tapVirtualAccount(); }
 
     @And("User tap BRI Debit Card on Payment Method List")
     public void userTapBRIDebitCardOnPaymentMethodList() { topUpPage.tapBRIDebitCard(); }

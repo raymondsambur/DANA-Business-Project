@@ -27,7 +27,7 @@ public interface TopUpLocator {
     By BUTTON_PAY = MobileBy.id("bt_pay_top_up");
     By TOP_UP_AMOUNT = MobileBy.id("tv_amount");
     By BUTTON_DEBIT_CARD = MobileBy.id("tv_method_opt_1");
-    By BUTTON_BANK_TRANSFER = MobileBy.id("tv_method_opt_2");
+    By BUTTON_VIRTUAL_ACCOUNT = MobileBy.id("tv_method_opt_2");
     By BUTTON_ALFAMART = MobileBy.id("tv_method_opt_3");
 
 

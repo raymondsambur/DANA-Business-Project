@@ -28,7 +28,7 @@ public class TopUpPage implements TopUpLocator {
     public void tapChangeButton() { androidDriver.findElement(BUTTON_CHANGE).click(); }
     public void tapPayButton() { androidDriver.findElement(BUTTON_PAY).click(); }
     public void tapAlfamart() { androidDriver.findElement(BUTTON_ALFAMART).click(); }
-    public void tapBankTransfer() { androidDriver.findElement(BUTTON_BANK_TRANSFER).click(); }
+    public void tapVirtualAccount() { androidDriver.findElement(BUTTON_VIRTUAL_ACCOUNT).click(); }
     public void tapBRIDebitCard() { androidDriver.findElement(BUTTON_DEBIT_CARD).click(); }
     public String amountTopUp() { return androidDriver.findElement(TOP_UP_AMOUNT).getText(); }
     public boolean allPaymentMethod() { return PageFunctions.waitABit(BUTTON_ALFAMART).isDisplayed(); }

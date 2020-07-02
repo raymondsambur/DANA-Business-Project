@@ -24,7 +24,7 @@ Feature: TopUp
     When  User input nominal "10000" on top up nominal text field on Top Up Page
     And  User tap Top Up button on Top Up Page
     And  User tap Change button on Payment Method Pop Up
-    And  User tap Bank Transfer on Payment Method List
+    And  User tap Virtual Account on Payment Method List
     And  User tap Pay Button on Payment Method Pop Up
     Then  User is on Top Up Result Page
 

@@ -8,7 +8,7 @@ Feature: Register
 # Register Button
   @RegButtonPositive
 # Make sure this scenario filled with ONLY unregistered account
-  Scenario: 1. Register new user with Valid name, Valid email, Valid Phone number, Valid Password, Valid Confirmation
+  Scenario: RG-01-01 Register new user with Valid name, Valid email, Valid Phone number, Valid Password, Valid Confirmation
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy8@gmail.com" on email text field
@@ -20,7 +20,7 @@ Feature: Register
 
   @RegButtonNegativeBecauseAlreadyRegistered
 # Make sure this scenario filled with already registered account
-  Scenario: 2. Register new user with already registered email
+  Scenario: RG-03-17 Register new user with already registered email
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy6@gmail.com" on email text field
@@ -30,7 +30,7 @@ Feature: Register
     And User Tap Register button
     Then User see register pop up message "Phone number or email already exist!"
 
-  Scenario: 3. Register new user with already registered phone number
+  Scenario: RG-04-04 Register new user with already registered phone number
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -41,7 +41,7 @@ Feature: Register
     Then User see register pop up message "Phone number or email already exist!"
 
   @RegButtonNegativeOnly
-  Scenario: 2. Register new user with Valid name, Valid email, Valid Phone number, Invalid Password (no symbol), Valid Confirmation
+  Scenario: RG-01-02 Register new user with Valid name, Valid email, Valid Phone number, Invalid Password (no symbol), Valid Confirmation
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy@gmail.com" on email text field
@@ -51,7 +51,7 @@ Feature: Register
     Then User see Register button is unclickable
 
   @RegButtonNegativeWithScenarioOutline
-  Scenario Outline: 2-x Register new user with at least one field is invalid
+  Scenario Outline: RG-01-03 ~ RG-01-32 Register new user with at least one field is invalid
     Given User is on DANA bussiness Register Page
     When User input name "<name>" on name text field
     And User input email "<email>" on email text field
@@ -96,19 +96,19 @@ Feature: Register
 
 # Name Field
   @NameFieldPositive
-  Scenario: 1. User input valid name format on name text field
+  Scenario: RG-02-01 User input valid name format on name text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     Then User see no error message
 
   @NameFieldNegativeEmpty
-  Scenario: 1. User didnt input name on name text field
+  Scenario: RG-02-13 User didnt input name on name text field
     Given User is on DANA bussiness Register Page
     When User input name "" on name text field
     Then User see register error message "Name cannot be empty!"
 
   @NameFieldNegativeWithScenarioOutline
-  Scenario Outline: 1. User input invalid name on name text field
+  Scenario Outline: RG-02-02 ~ RG-02-12 User input invalid name on name text field
     Given User is on DANA bussiness Register Page
     When User input name "<namefield>" on name text field
     Then User see register error message "Name field should alphabet only with 30 characters maximum!"
@@ -128,21 +128,21 @@ Feature: Register
 
 # Email Field
   @EmailFieldPositive
-  Scenario: 1. User input valid email format on email text field
+  Scenario: RG-03-01 User input valid email format on email text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy@gmail.com" on email text field
     Then User see no error message
 
   @EmailFieldNegativeEmpty
-  Scenario: User didnt input email on email text field
+  Scenario: RG-03-18 User input blank email on email text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "" on email text field
     Then User see register error message "Email cannot be empty!"
 
   @EmailFieldNegativeWithScenarioOutline
-  Scenario Outline: User input invalid email on email text field
+  Scenario Outline: RG-03-02 ~ RG-03-17 User input invalid email on email text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "<emailfield>" on email text field
@@ -167,7 +167,7 @@ Feature: Register
 
 # Phone Field
   @PhoneFieldPositive
-  Scenario: 1. User input valid Phone number format on Phone number text field
+  Scenario: RG-04-01 User input valid Phone number format on Phone number text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy@gmail.com" on email text field
@@ -175,7 +175,7 @@ Feature: Register
     Then User see no error message
 
   @PhoneFieldNegativeEmpty
-  Scenario: User didnt input Phone number on Phone number text field
+  Scenario: RG-04-17 User didnt input Phone number on Phone number text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy@gmail.com" on email text field
@@ -183,7 +183,7 @@ Feature: Register
     Then User see error message "Phone Number cannot be empty!"
 
   @PhoneFieldNegativeWithScenarioOutline
-  Scenario Outline: User input invalid Phone number on Phone number text field
+  Scenario Outline: RG-04-02 ~ RG-04-16 User input invalid Phone number on Phone number text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy@gmail.com" on email text field
@@ -208,7 +208,7 @@ Feature: Register
 
 # Password Field
   @PasswordFieldPositive
-  Scenario: 1. User input valid password format on password text field
+  Scenario: RG-05-01 User input valid password format on password text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -217,7 +217,7 @@ Feature: Register
     Then User see no error message
 
   @PasswordFieldNegativeEmpty
-  Scenario: User didnt input password on password text field
+  Scenario: RG-05-20 User input blank password on password text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -226,7 +226,7 @@ Feature: Register
     Then User see error message "Password cannot be empty!"
 
   @PasswordFieldNegativeWithScenarioOutline
-  Scenario Outline: User input invalid password on password text field
+  Scenario Outline: RG-05-03 ~ RG-05-19 User input invalid password on password text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -253,7 +253,7 @@ Feature: Register
       | P@ssw0rd1111111111111 |
 
   @PasswordFieldHide/showButton1
-  Scenario: User input password and didn't click hide/show password button
+  Scenario: RG-05-02 User input password and didn't click hide/show password button
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -262,7 +262,7 @@ Feature: Register
     Then User see Password is masked
 
   @PasswordFieldHide/showButton2
-  Scenario: User input valid password and click hide/show password button
+  Scenario: RG-05-02 User input valid password and click hide/show password button
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -272,7 +272,7 @@ Feature: Register
     Then User see string "P@ssw0rd" on password text field
 
   @PasswordFieldHide/showButton3
-  Scenario: User input invalid password and click hide/show password button
+  Scenario: RG-05-03 User input invalid password and click hide/show password button
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -283,7 +283,7 @@ Feature: Register
 
 # Confirmation Field
   @ConfirmationPositive
-  Scenario: 1. User input valid password format on confirmation password text field
+  Scenario: RG-06-01 User input valid password format on confirmation password text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -293,7 +293,7 @@ Feature: Register
     Then User see no error message
 
   @ConfirmationNegativeEmpty
-  Scenario: 1. User didnt re-type password confirmation password text field
+  Scenario: RG-06-03 User didnt re-type password confirmation password text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -303,7 +303,7 @@ Feature: Register
     Then User see error message "Password Confirmation cannot be empty!"
 
   @ConfirmationNegativeOnly
-  Scenario: 1. User didnt re-type match password confirmation password text field
+  Scenario: RG-06-02 User didnt re-type match password confirmation password text field
     Given User is on DANA bussiness Register Page
     When User input name "Agung" on name text field
     And User input email "emaildummy2@gmail.com" on email text field
@@ -314,9 +314,7 @@ Feature: Register
 
 # Back Button
   @RegisterBackButton
-  Scenario: Verify Back Button functionality
+  Scenario: RG-07-01 Verify Back Button functionality
     Given User is on DANA bussiness Register Page
     When User tap Back button on Register Page
     Then User is on Login Page
-
-#   @UITesting
